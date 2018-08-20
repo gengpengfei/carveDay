@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/jk/Desktop/obj/carveDay/node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedModule.m \
+  /Users/jk/Desktop/obj/carveDay/node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedModule.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeModule.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventDispatcher.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridge.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBridgeDelegate.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTJavaScriptLoader.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTFrameUpdate.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTInvalidating.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTEventEmitter.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManager.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTRootView.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTViewManager.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/UIView+React.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTComponent.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManagerObserverCoordinator.h \
+  /Users/jk/Desktop/obj/carveDay/ios/build/Build/Products/Debug-iphonesimulator/include/React/RCTUIManagerUtils.h \
+  /Users/jk/Desktop/obj/carveDay/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/jk/Desktop/obj/carveDay/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h \
+  /Users/jk/Desktop/obj/carveDay/node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h
