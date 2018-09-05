@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    // - 折行
+    "editor.wordWrap": "on",
+    "editor.fontSize": 16,
+    "color-highlight.markerType": "dot-before",
+    "javascript.validate.enable": false,
+}
