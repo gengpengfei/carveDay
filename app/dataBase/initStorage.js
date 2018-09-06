@@ -13,29 +13,4 @@ var storage = new Storage({
     enableCache: true,
     // sync: require('./sync')  // 这个sync文件是要你自己写的
 })
-
-//写入缓存
-export function setStorage(key, data) {
-    storage.save({
-        key: key,
-        data: data
-    });
-}
-// 获取缓存
-export function getStorage(key, callback) {
-    storage.load({
-        key: key.toString(),
-    }).
-        then(ret => {   //成功时的回调函数
-            callback({
-                code: 1,
-                data: ret,
-            })
-        }).
-        catch(err => { //失败时的回调函数
-            callback({
-                code: -1,
-                data: err,
-            })
-        })
-}
+global.storage = storage

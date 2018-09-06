@@ -1,6 +1,6 @@
 
 const reqUrl = {
-    getRewartInfo: global_BASEURL + '/api/User/userRewardInfo',//用户奖励金详情
+    loginToken: global_BASEURL + '/api/User/userRewardInfo',//用户奖励金详情
 };
 
 let CryptoJS = require('crypto-js');
@@ -11,7 +11,7 @@ function serviceRequestEncryption(bodyData) {
     let tempBodyData = [];
     tempBodyData = bodyData;
     tempBodyData["isAjax"] = "1";
-    tempBodyData["user_id"] = USER_UUID;
+    // tempBodyData["user_id"] = USER_UUID;
 
     let objKeys = Object.keys(tempBodyData);
     objKeys.sort(); //排序
@@ -39,7 +39,7 @@ function serviceRequestEncryption(bodyData) {
 const NetWork_Post = function (net_api, bodyData, callback) {
     // 加密
     bodyData = serviceRequestEncryption(bodyData);
-    let opt_headers, post_error;
+
     let post_header = {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
@@ -54,7 +54,7 @@ const NetWork_Post = function (net_api, bodyData, callback) {
         headers: post_header,
         body: JSON.stringify(bodyData)
     };
-    callback({ 'code': '1', msg: 'ok', data: {})
+    callback({ code: '1', msg: 'ok', data: {} });
     // fetch(url, fetchOptions).then((response) => response.text()).then((responseText) => {
     //     let responseData = JSON.parse(responseText);
     //     callback(responseData);
