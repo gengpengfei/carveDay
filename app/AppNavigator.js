@@ -4,7 +4,9 @@
  */
 import { createStackNavigator, createBottomTabNavigator, createSwitchNavigator } from 'react-navigation';
 import Welcome from './containers/welcome/welcome'
+import WelcomeCode from './containers/welcome/welcomeCode'
 import Home from './containers/home/home'
+import Mine from './containers/mine/mine'
 import Login from './containers/login/login'
 const RootTabNav = createBottomTabNavigator(
     {
@@ -12,7 +14,7 @@ const RootTabNav = createBottomTabNavigator(
             screen: Home,
         },
         Mine: {
-            screen: Home,
+            screen: Mine,
         },
     },
     {
@@ -60,8 +62,15 @@ const LoginStack = createStackNavigator(
         Login: { screen: Login }
     }
 )
+
+const WelcomeStack = createStackNavigator(
+    {
+        Welcome: Welcome,
+        WelcomeCode: WelcomeCode
+    }
+)
 const AppReactNavigation = createSwitchNavigator({
-    Welcome: Welcome, //-- 引导页
+    Welcome: WelcomeStack, //-- 引导页
     Login: LoginStack,//-- 登陆页
     App: AppStock //-- 主app
 });

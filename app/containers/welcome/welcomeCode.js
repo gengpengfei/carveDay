@@ -1,5 +1,14 @@
 import React, { Component } from 'react';
 import { View, Image, Text } from 'react-native';
+
+class WelcomeCode extends Component {
+
+    static navigationOptions = ({ navigation }) => ({
+        title: '欢迎页实现教程'
+    })
+    render() {
+        var code = `import React, { Component } from 'react';
+import { View, Image, Text } from 'react-native';
 import ClickView from './../../components/clickView'
 
 class Welcome extends Component {
@@ -12,7 +21,7 @@ class Welcome extends Component {
     componentDidMount() {
         //-- 跳转home
         setTimeout(() => {
-            this.props.navigation.navigate("RootTabNav");
+            // this.props.navigation.navigate("RootTabNav");
         }, 2000);
     }
     render() {
@@ -24,4 +33,12 @@ class Welcome extends Component {
         )
     }
 }
-export default Welcome
+export default Welcome`;
+        return (
+            <View>
+                <Text selectable={true} style={{ borderColor: 'red', borderWidth: 1, padding: 20 }}>{code}</Text>
+            </View>
+        )
+    }
+}
+export default WelcomeCode

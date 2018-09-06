@@ -1,16 +1,16 @@
-import red from './red.js';
-import black from './black.js';
-var theme;
+import red from './redTheme';
+import blue from './blueTheme';
+var theme = {};
 switch (global.THEME) {
     case 'red':
-        theme = black;
-        break;
-    case 'black':
         theme = red;
+        break;
+    case 'blue':
+        theme = blue;
         break;
     default:
         theme = red;
         break;
 }
-
+console.log('4444', theme)
 export default theme;
