@@ -6,6 +6,7 @@
  * @flow
  */
 import './app/global';
+import './app/dataBase/storageInit';
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import store from './app/redux/store';

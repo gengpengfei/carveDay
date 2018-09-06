@@ -25,6 +25,7 @@ const RootTabNav = createBottomTabNavigator(
         navigationOptions: {
             headerLeft: null,
             gesturesEnabled: false,
+            header: null
         },
         tabBarOptions: {
             activeTintColor: 'red',
@@ -36,15 +37,6 @@ const RootTabNav = createBottomTabNavigator(
     }
 );
 
-RootTabNav.navigationOptions = ({ navigation }) => {
-    let { routeName } = navigation.state.routes[navigation.state.index];
-    if (routeName == 'Home' || routeName == 'Login') {
-        return {
-            header: null,
-        };
-    }
-};
-
 const AppStock = createStackNavigator(
     {
         RootTabNav: { screen: RootTabNav },
@@ -53,6 +45,7 @@ const AppStock = createStackNavigator(
         initialRouteName: 'RootTabNav',
         navigationOptions: {
             gesturesEnabled: false,
+            header: null
         }
     }
 );
@@ -67,6 +60,13 @@ const WelcomeStack = createStackNavigator(
     {
         Welcome: Welcome,
         WelcomeCode: WelcomeCode
+    },
+    {
+        initialRouteName: 'Welcome',
+        navigationOptions: {
+            gesturesEnabled: false,
+            header: null
+        }
     }
 )
 const AppReactNavigation = createSwitchNavigator({
