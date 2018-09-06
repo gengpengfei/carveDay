@@ -10,17 +10,17 @@ class Home extends Component {
         this.state = {};
     }
     static navigationOptions = ({ navigation }) => ({
-        header: 'aaa',
-        // tabBarLabel: '首页',
-        // tabBarIcon: ({ tintColor }) => (
-        //     <Image
-        //         source={require('./src/home.png')}
-        //         style={{
-        //             width: 18, height: 18,
-        //             tintColor: tintColor
-        //         }}
-        //     />
-        // ),
+        header: null,
+        tabBarLabel: '首页',
+        tabBarIcon: ({ tintColor }) => (
+            <Image
+                source={require('./src/home.png')}
+                style={{
+                    width: 18, height: 18,
+                    tintColor: tintColor
+                }}
+            />
+        ),
         // tabBarOnPress: (scene, jumpToIndex) => {
         //     if (navigation.state.params && navigation.state.params.nTabBarOnPress) {
         //         navigation.state.params.nTabBarOnPress()

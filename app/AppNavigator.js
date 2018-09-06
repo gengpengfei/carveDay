@@ -2,12 +2,18 @@
  * https://www.cnblogs.com/CrazyWL/p/7283600.html 具体详细使用
  * 
  */
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import { createStackNavigator, createBottomTabNavigator, createSwitchNavigator } from 'react-navigation';
 import Welcome from './containers/welcome/welcome'
 import Home from './containers/home/home'
+import Login from './containers/login/login'
 const RootTabNav = createBottomTabNavigator(
     {
-        Home: { screen: Home },
+        Home: {
+            screen: Home,
+        },
+        Mine: {
+            screen: Home,
+        },
     },
     {
         initialRouteName: 'Home',
@@ -22,24 +28,42 @@ const RootTabNav = createBottomTabNavigator(
             activeTintColor: 'red',
             inactiveTintColor: 'red',
             labelStyle: {
-                fontSize: 15,
+                fontSize: 16,
             }
         },
     }
 );
 
-//第一个参数 导航页面的配置 以及一些静态配置参数  第二个参数初始页面配置
-const AppReactNavigation = createStackNavigator(
+RootTabNav.navigationOptions = ({ navigation }) => {
+    let { routeName } = navigation.state.routes[navigation.state.index];
+    if (routeName == 'Home' || routeName == 'Login') {
+        return {
+            header: null,
+        };
+    }
+};
+
+const AppStock = createStackNavigator(
     {
-        Welcome: { screen: Welcome },
         RootTabNav: { screen: RootTabNav },
     },
     {
-        initialRouteName: 'Welcome',
+        initialRouteName: 'RootTabNav',
         navigationOptions: {
             gesturesEnabled: false,
         }
     }
 );
 
-export default AppReactNavigation;
+const LoginStack = createStackNavigator(
+    {
+        Login: { screen: Login }
+    }
+)
+const AppReactNavigation = createSwitchNavigator({
+    Welcome: Welcome, //-- 引导页
+    Login: LoginStack,//-- 登陆页
+    App: AppStock //-- 主app
+});
+
+export default AppReactNavigation
