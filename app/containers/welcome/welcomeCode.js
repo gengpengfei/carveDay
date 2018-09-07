@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { ScrollView, Image, Text } from 'react-native';
-
+import Header from '../../components/header'
 class WelcomeCode extends Component {
 
     static navigationOptions = ({ navigation }) => ({
-        title: '欢迎页实现教程',
-        header: <Text>123</Text>
+        header: <Header
+            title='我的积分'
+            showBack={true}
+            backBtnOnPress={() => {
+                navigation.goBack();
+            }} />,
     })
     render() {
         var code = `import React, { Component } from 'react';
@@ -24,7 +28,6 @@ class Welcome extends Component {
     _LoginTry = () => {
         //-- 获取本地缓存的token和手机号
         getStorage('loginToken', (data) => {
-            console.log('12312312332', data)
             if (data.code == '1') {
                 //-- 根据token进行登陆判断
                 let formData = {
@@ -45,8 +48,8 @@ class Welcome extends Component {
                     }
                 })
             } else {
-                //-- 为了测试使用（请忽略）
-                setStorage('loginToken', { mobile: '153****5237', token: 'ffleind1322hl123ji' })
+                //-- 测试使用（请忽略）
+                setStorage('loginToken', { mobile: '153****5237', token: '子非鱼' })
             }
         })
     }

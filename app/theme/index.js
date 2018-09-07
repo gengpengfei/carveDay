@@ -12,5 +12,4 @@ switch (global.THEME) {
         theme = red;
         break;
 }
-console.log('4444', theme)
 export default theme;

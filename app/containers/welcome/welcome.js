@@ -8,6 +8,9 @@ class Welcome extends Component {
     constructor(props) {
         super(props)
     }
+    static navigationOptions = ({ navigation }) => ({
+        header: null
+    })
     componentDidMount() {
         //-- token自动登陆
         this._LoginTry();
@@ -15,7 +18,6 @@ class Welcome extends Component {
     _LoginTry = () => {
         //-- 获取本地缓存的token和手机号
         getStorage('loginToken', (data) => {
-            console.log('12312312332', data)
             if (data.code == '1') {
                 //-- 根据token进行登陆判断
                 let formData = {
@@ -36,8 +38,8 @@ class Welcome extends Component {
                     }
                 })
             } else {
-                //-- 为了测试使用（请忽略）
-                setStorage('loginToken', { mobile: '153****5237', token: 'ffleind1322hl123ji' })
+                //-- 测试使用（请忽略）
+                setStorage('loginToken', { mobile: '153****5237', token: '子非鱼' })
             }
         })
     }

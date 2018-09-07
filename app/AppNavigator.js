@@ -45,7 +45,6 @@ const AppStock = createStackNavigator(
         initialRouteName: 'RootTabNav',
         navigationOptions: {
             gesturesEnabled: false,
-            header: null
         }
     }
 );
@@ -53,6 +52,11 @@ const AppStock = createStackNavigator(
 const LoginStack = createStackNavigator(
     {
         Login: { screen: Login }
+    },
+    {
+        navigationOptions: {
+            gesturesEnabled: false,
+        }
     }
 )
 
@@ -65,7 +69,6 @@ const WelcomeStack = createStackNavigator(
         initialRouteName: 'Welcome',
         navigationOptions: {
             gesturesEnabled: false,
-            header: null
         }
     }
 )
@@ -75,4 +78,11 @@ const AppReactNavigation = createSwitchNavigator({
     App: AppStock //-- 主app
 });
 
+AppReactNavigation.navigationOptions = ({ navigation }) => {
+    const component = AppReactNavigation.router.getComponentForState(navigation.state)
+    if (typeof component.navigationOptions === 'function') {
+        return component.navigationOptions({ navigation })
+    }
+    return component.navigationOptions
+}
 export default AppReactNavigation
