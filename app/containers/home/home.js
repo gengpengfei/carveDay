@@ -5,18 +5,22 @@ import {
     ImageBackground,
     Text,
     View,
+    ScrollView,
     SafeAreaView,
     Image,
+    FlatList,
     TextInput,
     StatusBar,
     TouchableOpacity
 } from 'react-native';
 import Header from '../../components/header'
+import list from './list.json'
+import styles from '../../theme'
 class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-
+            list: []
         };
     }
     static navigationOptions = ({ navigation }) => ({
@@ -39,12 +43,24 @@ class Home extends Component {
     searchPress = (searchStr) => {
         console.log('searchStr', searchStr)
     }
+    componentDidMount() {
+        this._getList();
+    }
+    _getList = () => {
+        this.setState({
+            list: list
+        })
+    }
     render() {
+        console.log('list', this.state.list)
         return (
             <SafeAreaView>
                 <HomeHeader searchPress={this.searchPress} />
-                <Text>123</Text>
-            </SafeAreaView >
+                <FlatList
+                    data={this.state.list}
+                    renderItem={() => <Text>123</Text>}
+                />
+            </SafeAreaView>
         );
     }
 }
@@ -99,7 +115,7 @@ class HomeHeader extends Component {
                     <TextInput
                         onSubmitEditing={this._onSubmintEditing}
                         underlineColorAndroid="transparent"
-                        autoFocus={true}
+                        // autoFocus={true}
                         returnKeyType={'search'}
                         placeholder={"搜索"}
                         style={{
