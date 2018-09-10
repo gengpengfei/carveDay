@@ -38,4 +38,4 @@ global.DebugLog = function () {
 }
 
 //-- 主题颜色
-global.THEME = 'blue';
+global.THEME = 'blue'; 

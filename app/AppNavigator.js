@@ -24,8 +24,7 @@ const RootTabNav = createBottomTabNavigator(
         lazyLoad: true,
         navigationOptions: {
             headerLeft: null,
-            gesturesEnabled: false,
-            header: null
+            gesturesEnabled: false
         },
         tabBarOptions: {
             activeTintColor: 'red',
@@ -44,7 +43,7 @@ const AppStock = createStackNavigator(
     {
         initialRouteName: 'RootTabNav',
         navigationOptions: {
-            gesturesEnabled: false,
+            gesturesEnabled: false
         }
     }
 );
@@ -54,8 +53,9 @@ const LoginStack = createStackNavigator(
         Login: { screen: Login }
     },
     {
+        initialRouteName: 'Login',
         navigationOptions: {
-            gesturesEnabled: false,
+            gesturesEnabled: false
         }
     }
 )
@@ -68,21 +68,22 @@ const WelcomeStack = createStackNavigator(
     {
         initialRouteName: 'Welcome',
         navigationOptions: {
-            gesturesEnabled: false,
+            gesturesEnabled: false
         }
     }
 )
 const AppReactNavigation = createSwitchNavigator({
     Welcome: WelcomeStack, //-- 引导页
     Login: LoginStack,//-- 登陆页
-    App: AppStock //-- 主app
+    App: AppStock, //-- 主app
 });
 
-AppReactNavigation.navigationOptions = ({ navigation }) => {
-    const component = AppReactNavigation.router.getComponentForState(navigation.state)
+RootTabNav.navigationOptions = ({ navigation }) => {
+    const component = RootTabNav.router.getComponentForState(navigation.state)
     if (typeof component.navigationOptions === 'function') {
         return component.navigationOptions({ navigation })
     }
     return component.navigationOptions
 }
+
 export default AppReactNavigation

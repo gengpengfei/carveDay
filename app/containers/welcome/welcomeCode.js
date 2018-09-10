@@ -5,9 +5,8 @@ class WelcomeCode extends Component {
 
     static navigationOptions = ({ navigation }) => ({
         header: <Header
-            title='我的积分'
-            showBack={true}
-            backBtnOnPress={() => {
+            title='引导页教程'
+            backPress={() => {
                 navigation.goBack();
             }} />,
     })
