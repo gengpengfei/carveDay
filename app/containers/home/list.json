@@ -16,8 +16,8 @@
         "route": "SwiperImg"
     },
     {
-        "title": "ReactNavigation2.0使用",
-        "route": "reactNavigation"
+        "title": "图片缓存组件react-native-img-cache",
+        "route": "ImageCache"
     },
     {
         "title": "自定义头部导航",

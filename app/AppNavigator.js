@@ -18,11 +18,12 @@ import TextInputCode from './containers/textInput/textInputCode'
 //-- 监听android 返回键
 import BackAndroid from './containers/backAndroid/backAndroid'
 import BackAndroidCode from './containers/backAndroid/backAndroidCode'
-//-- 轮播图组件
+//-- 轮播图组件(react-native-swiper)
 import SwiperImg from './containers/swiper/swiperImg'
 import SwiperImgCode from './containers/swiper/swiperImgCode'
-
-
+//-- 图片缓存组件（react-native-img-cache）
+import ImageCache from './containers/imageCache/imageCache'
+import ImageCacheCode from './containers/imageCache/imageCacheCode'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -62,7 +63,9 @@ const AppStock = createStackNavigator(
         BackAndroid: { screen: BackAndroid },
         BackAndroidCode: { screen: BackAndroidCode },
         SwiperImg: { screen: SwiperImg },
-        SwiperImgCode: { screen: SwiperImgCode }
+        SwiperImgCode: { screen: SwiperImgCode },
+        ImageCache: { screen: ImageCache },
+        ImageCacheCode: { screen: ImageCacheCode }
     },
     {
         initialRouteName: 'RootTabNav',
