@@ -6,11 +6,12 @@ export default clickView = (props) => {
         <TouchableOpacity
             style={{
                 position: 'absolute',
-                bottom: 5,
+                bottom: 10,
                 right: 5,
             }}
             onPress={() => {
                 var routeName = props.navigation.state.routeName;
+                console.log('route', routeName)
                 props.navigation.navigate(routeName + 'Code');
             }}
         >

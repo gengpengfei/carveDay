@@ -37,7 +37,7 @@ class Home extends Component {
         )
     });
     searchPress = (searchStr) => {
-        console.log('searchStr', searchStr)
+
     }
     componentDidMount() {
         this._getList();
@@ -61,7 +61,6 @@ class Home extends Component {
         )
     }
     render() {
-        console.log('list', this.state.list)
         return (
             <SafeAreaView>
                 <HomeHeader searchPress={this.searchPress} />

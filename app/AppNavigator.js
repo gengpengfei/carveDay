@@ -10,8 +10,17 @@ import Home from './containers/home/home'
 import Errors from './containers/error/error'
 import Mine from './containers/mine/mine'
 import Login from './containers/login/login'
+//-- 头部及底部
 import NavigationCode from './containers/navigation/navigationCode';
+//-- input 输入
 import TextInput from './containers/textInput/textInput'
+import TextInputCode from './containers/textInput/textInputCode'
+//-- 监听android 返回键
+import BackAndroid from './containers/backAndroid/backAndroid'
+import BackAndroidCode from './containers/backAndroid/backAndroidCode'
+//-- 轮播图组件
+import SwiperImg from './containers/swiper/swiperImg'
+import SwiperImgCode from './containers/swiper/swiperImgCode'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -46,7 +55,12 @@ const AppStock = createStackNavigator(
     {
         RootTabNav: { screen: RootTabNav },
         NavigationCode: { screen: NavigationCode },
-        TextInput: { screen: TextInput }
+        TextInput: { screen: TextInput },
+        TextInputCode: { screen: TextInputCode },
+        BackAndroid: { screen: BackAndroid },
+        BackAndroidCode: { screen: BackAndroidCode },
+        SwiperImg: { screen: SwiperImg },
+        SwiperImgCode: { screen: SwiperImgCode }
     },
     {
         initialRouteName: 'RootTabNav',

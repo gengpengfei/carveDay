@@ -1,4 +1,17 @@
-import React, { PureComponent, Component } from 'react';
+import React, { Component } from 'react';
+import { ScrollView, Image, Text } from 'react-native';
+import Header from '../../components/header'
+export default class TextInputCode extends Component {
+
+    static navigationOptions = ({ navigation }) => ({
+        header: <Header
+            title='TextInput代码'
+            backPress={() => {
+                navigation.goBack();
+            }} />,
+    })
+    render() {
+        var code = `import React, { PureComponent, Component } from 'react';
 import {
     Text,
     View,
@@ -106,8 +119,15 @@ export default class TextInputSearch extends Component {
                         <Text>搜索</Text>
                     </TouchableOpacity>
                 </View>
-                <ClickView {...this.props} />
+                <ClickView />
             </View>
         );
+    }
+}`;
+        return (
+            <ScrollView style={{ padding: 10 }}>
+                <Text selectable={true}>{code}</Text>
+            </ScrollView>
+        )
     }
 }

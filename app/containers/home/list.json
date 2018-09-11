@@ -8,8 +8,8 @@
         "route": "TextInput"
     },
     {
-        "title": "ReactNavigation2.0使用",
-        "route": "reactNavigation"
+        "title": "android连续点击返回键退出应用",
+        "route": "BackAndroid"
     },
     {
         "title": "自定义头部导航",
