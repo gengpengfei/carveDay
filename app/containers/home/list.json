@@ -12,8 +12,8 @@
         "route": "BackAndroid"
     },
     {
-        "title": "自定义头部导航",
-        "route": "commonHeader"
+        "title": "轮播图组件react-native-swiper",
+        "route": "SwiperImg"
     },
     {
         "title": "ReactNavigation2.0使用",

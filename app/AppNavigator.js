@@ -21,6 +21,8 @@ import BackAndroidCode from './containers/backAndroid/backAndroidCode'
 //-- 轮播图组件
 import SwiperImg from './containers/swiper/swiperImg'
 import SwiperImgCode from './containers/swiper/swiperImgCode'
+
+
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
