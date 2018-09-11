@@ -1,5 +1,6 @@
 export default {
     primaryColor: '#1890ff',                         // 全局主色
+    primarySecondaryColor: '#77abf3',                // 全局次主色 
     linkColor: '#1890ff',                            // 链接色
     successColor: '#52c41a',                         // 成功色
     warningColor: '#faad14',                         // 警告色

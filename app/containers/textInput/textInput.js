@@ -14,106 +14,14 @@ import {
     TouchableOpacity
 } from 'react-native';
 import Header from '../../components/header'
-import list from './list.json'
 import styles from '../../theme'
-class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            list: []
-        };
-    }
-    static navigationOptions = ({ navigation }) => ({
-        header: null,
-        tabBarLabel: '首页',
-        tabBarIcon: ({ tintColor }) => (
-            <Image
-                source={require('./src/home.png')}
-                style={{
-                    width: 18, height: 18,
-                    tintColor: tintColor
-                }}
-            />
-        )
-    });
-    searchPress = (searchStr) => {
-        console.log('searchStr', searchStr)
-    }
-    componentDidMount() {
-        this._getList();
-    }
-    _getList = () => {
-        this.setState({
-            list: list
-        })
-    }
-    _itemView = (value) => {
-        let { item, index } = value
-        return (
-            <TouchableOpacity
-                onPress={() => {
-                    this.props.navigation.navigate(item.route)
-                }}
-                style={{ padding: 5, height: 40, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}
-            >
-                <Text>{item.title}</Text><Text style={{ color: styles.primaryColor }}>></Text>
-            </TouchableOpacity>
-        )
-    }
-    render() {
-        console.log('list', this.state.list)
-        return (
-            <SafeAreaView>
-                <HomeHeader searchPress={this.searchPress} />
-                <FlatList
-                    keyExtractor={(item, index) => index.toString()}
-                    //-- 数据源
-                    data={this.state.list}
-                    //-- 单个列表元素
-                    renderItem={this._itemView}
-                    //-- 头部
-                    ListHeaderComponent={() => {
-                        return <View style={{ height: 1, backgroundColor: styles.linkColor, marginTop: 10 }} />;
-                    }}
-                    //-- 底部
-                    ListFooterComponent={() => {
-                        return <View style={{ height: 1, backgroundColor: styles.linkColor }} />;
-                    }}
-                    //-- 每个item之间的分割线
-                    ItemSeparatorComponent={() => {
-                        return <View style={{ height: 1, backgroundColor: styles.linkColor }} />;
-                    }}
-                    //-- 额外的数据源
-                    extraData={[]}
-                    //-- 设置是否是水平布局
-                    horizontal={false}
-                    //-- 初始化渲染的数量，最好刚刚填满屏幕
-                    initialNumToRender={10}
-                    //-- 距离底部多远时触发函数
-                    onEndReachedThreshold={0.1}
-                    //-- 超过设置的底部距离时触发
-                    onEndReached={() => { }}
-                    //-- 下啦刷新触发函数
-                    onRefresh={() => { }}
-                    //-- 是否显示正在加载中
-                    refreshing={false}
-                />
-            </SafeAreaView>
-        );
-    }
-}
-
-class HomeHeader extends Component {
+export default class TextInputSearch extends Component {
     constructor(props) {
         super(props);
         this.state = {
             searchStr: ''
         }
     }
-    static defaultProps = {
-        searchPress: () => {
-        }
-    };
     _onChangeText = (text) => {
         this.setState({
             searchStr: text
@@ -128,13 +36,16 @@ class HomeHeader extends Component {
         if (this.state.searchStr == '') {
             return;
         }
-        this.props.searchPress(this.state.searchStr);
+        this._searchPress(this.state.searchStr);
+    }
+    _searchPress = () => {
+
     }
     render() {
         return (
             <ImageBackground
                 resizeMode='cover'
-                source={require('./src/headerBorder.png')}
+                // source={require('./src/headerBorder.png')}
                 style={{ height: appBar_Height, marginTop: statusbarHeight }}>
                 <StatusBar
                     animated={true} //指定状态栏的变化是否应以动画形式呈现
@@ -204,5 +115,3 @@ class HomeHeader extends Component {
         );
     }
 }
-
-export default Home;

@@ -1,11 +1,11 @@
 [
     {
         "title": "ReactNavigation2.0使用",
-        "route": "reactNavigation"
+        "route": "NavigationCode"
     },
     {
-        "title": "自定义头部导航",
-        "route": "commonHeader"
+        "title": "输入框TextInput使用方法",
+        "route": "TextInput"
     },
     {
         "title": "ReactNavigation2.0使用",

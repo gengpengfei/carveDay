@@ -63,8 +63,8 @@ class Welcome extends Component {
 }
 export default Welcome`;
         return (
-            <ScrollView>
-                <Text selectable={true} style={{ padding: 10 }}>{code}</Text>
+            <ScrollView style={{ padding: 10 }}>
+                <Text selectable={true}>{code}</Text>
             </ScrollView>
         )
     }

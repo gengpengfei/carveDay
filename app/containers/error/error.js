@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
-import {
-    View,
-    ScrollView,
-    Text,
-    Image
-} from 'react-native';
-class Mine extends Component {
+import { View, Text, Image } from 'react-native';
+export default class Errors extends Component {
     constructor(props) {
-        super(props);
-        this.state = {};
+        super(props)
     }
     static navigationOptions = ({ navigation }) => ({
         header: null,
-        tabBarLabel: '工具',
+        tabBarLabel: '错误',
         tabBarIcon: ({ tintColor }) => (
             <Image
                 source={require('../home/src/home.png')}
@@ -25,11 +19,9 @@ class Mine extends Component {
     });
     render() {
         return (
-            <ScrollView>
-                <View>我的页面</View>
-            </ScrollView>
-        );
+            <View>
+                <Text>123</Text>
+            </View>
+        )
     }
 }
-
-export default Mine;
