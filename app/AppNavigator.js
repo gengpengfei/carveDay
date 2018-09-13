@@ -24,6 +24,9 @@ import SwiperImgCode from './containers/swiper/swiperImgCode'
 //-- 图片缓存组件（react-native-img-cache）
 import ImageCache from './containers/imageCache/imageCache'
 import ImageCacheCode from './containers/imageCache/imageCacheCode'
+//-- 开关选择按钮
+import SwitchButton from './containers/switchButton/switchButton'
+import SwitchButtonCode from './containers/switchButton/switchButtonCode'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -65,7 +68,9 @@ const AppStock = createStackNavigator(
         SwiperImg: { screen: SwiperImg },
         SwiperImgCode: { screen: SwiperImgCode },
         ImageCache: { screen: ImageCache },
-        ImageCacheCode: { screen: ImageCacheCode }
+        ImageCacheCode: { screen: ImageCacheCode },
+        SwitchButton: { screen: SwitchButton },
+        SwitchButtonCode: { screen: SwitchButtonCode }
     },
     {
         initialRouteName: 'RootTabNav',

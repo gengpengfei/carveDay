@@ -20,8 +20,8 @@
         "route": "ImageCache"
     },
     {
-        "title": "自定义头部导航",
-        "route": "commonHeader"
+        "title": "开关选择按钮",
+        "route": "SwitchButton"
     },
     {
         "title": "ReactNavigation2.0使用",
