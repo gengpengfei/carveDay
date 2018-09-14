@@ -11,7 +11,6 @@ export default clickView = (props) => {
             }}
             onPress={() => {
                 var routeName = props.navigation.state.routeName;
-                console.log('route', routeName)
                 props.navigation.navigate(routeName + 'Code');
             }}
         >

@@ -14,7 +14,7 @@ import {
     TouchableOpacity
 } from 'react-native';
 import Header from '../../components/header'
-import list from './list.json'
+import list from '../list.json'
 import styles from '../../theme'
 class Home extends Component {
     constructor(props) {

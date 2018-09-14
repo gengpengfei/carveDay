@@ -27,6 +27,19 @@ import ImageCacheCode from './containers/imageCache/imageCacheCode'
 //-- 开关选择按钮
 import SwitchButton from './containers/switchButton/switchButton'
 import SwitchButtonCode from './containers/switchButton/switchButtonCode'
+//-- 弹出层modal
+import PopupModal from './containers/popupModal/popupModal'
+import PopupModalCode from './containers/popupModal/popupModalCode'
+//-- 验证码倒计时
+import CountDown from './containers/countdown/countDown'
+import CountDownCode from './containers/countdown/countDownCode'
+//-- tab栏切换
+import ScrollableTab from './containers/scrollableTab/scrollableTab'
+import ScrollableTabCode from './containers/scrollableTab/scrollableTabCode'
+//-- rn嵌套webview
+import WebViews from './containers/webView/webViews'
+import webViewsCode from './containers/webView/webViewsCode'
+import WebViewsCode from './containers/webView/webViewsCode';
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -70,7 +83,15 @@ const AppStock = createStackNavigator(
         ImageCache: { screen: ImageCache },
         ImageCacheCode: { screen: ImageCacheCode },
         SwitchButton: { screen: SwitchButton },
-        SwitchButtonCode: { screen: SwitchButtonCode }
+        SwitchButtonCode: { screen: SwitchButtonCode },
+        PopupModal: { screen: PopupModal },
+        PopupModalCode: { screen: PopupModalCode },
+        CountDown: { screen: CountDown },
+        CountDownCode: { screen: CountDownCode },
+        ScrollableTab: { screen: ScrollableTab },
+        ScrollableTabCode: { screen: ScrollableTabCode },
+        WebViews: { screen: WebViews },
+        WebViewsCode: { screen: WebViewsCode }
     },
     {
         initialRouteName: 'RootTabNav',
