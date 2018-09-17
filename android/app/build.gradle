@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-linear-gradient')
     compile project(':react-native-fetch-blob')
     compile project(':rn-fetch-blob')
     compile fileTree(dir: "libs", include: ["*.jar"])

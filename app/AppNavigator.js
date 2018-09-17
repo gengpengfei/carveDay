@@ -38,8 +38,10 @@ import ScrollableTab from './containers/scrollableTab/scrollableTab'
 import ScrollableTabCode from './containers/scrollableTab/scrollableTabCode'
 //-- rn嵌套webview
 import WebViews from './containers/webView/webViews'
-import webViewsCode from './containers/webView/webViewsCode'
 import WebViewsCode from './containers/webView/webViewsCode';
+//-- 背景色渐变
+import Gradient from './containers/gradient/gradient'
+import GradientCode from './containers/gradient/gradientCode'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -91,7 +93,9 @@ const AppStock = createStackNavigator(
         ScrollableTab: { screen: ScrollableTab },
         ScrollableTabCode: { screen: ScrollableTabCode },
         WebViews: { screen: WebViews },
-        WebViewsCode: { screen: WebViewsCode }
+        WebViewsCode: { screen: WebViewsCode },
+        Gradient: { screen: Gradient },
+        GradientCode: { screen: GradientCode }
     },
     {
         initialRouteName: 'RootTabNav',

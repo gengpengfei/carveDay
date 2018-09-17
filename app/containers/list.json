@@ -40,8 +40,8 @@
         "route": "WebViews"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "背景色渐变组件react-native-linear-gradient",
+        "route": "Gradient"
     },
     {
         "title": "发送验证码倒计时",
