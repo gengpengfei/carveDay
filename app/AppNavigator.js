@@ -45,6 +45,18 @@ import GradientCode from './containers/gradient/gradientCode'
 //-- 图片上传
 import UploadImg from './containers/uploadImg/uploadImg'
 import UploadImgCode from './containers/uploadImg/uploadImgCode'
+
+
+
+
+
+
+
+//-- 工具-flex 
+import Flexs from './containers/flex/flexs'
+import FlexAttr from './containers/flex/flexAttr'
+//-- 工具-vscode
+import Vscode from './containers/vscode/vscode'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -100,7 +112,10 @@ const AppStock = createStackNavigator(
         Gradient: { screen: Gradient },
         GradientCode: { screen: GradientCode },
         UploadImg: { screen: UploadImg },
-        UploadImgCode: { screen: UploadImgCode }
+        UploadImgCode: { screen: UploadImgCode },
+        Flexs: { screen: Flexs },
+        FlexAttr: { screen: FlexAttr },
+        Vscode: { screen: Vscode }
     },
     {
         initialRouteName: 'RootTabNav',
