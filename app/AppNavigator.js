@@ -42,6 +42,9 @@ import WebViewsCode from './containers/webView/webViewsCode';
 //-- 背景色渐变
 import Gradient from './containers/gradient/gradient'
 import GradientCode from './containers/gradient/gradientCode'
+//-- 图片上传
+import UploadImg from './containers/uploadImg/uploadImg'
+import UploadImgCode from './containers/uploadImg/uploadImgCode'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -95,7 +98,9 @@ const AppStock = createStackNavigator(
         WebViews: { screen: WebViews },
         WebViewsCode: { screen: WebViewsCode },
         Gradient: { screen: Gradient },
-        GradientCode: { screen: GradientCode }
+        GradientCode: { screen: GradientCode },
+        UploadImg: { screen: UploadImg },
+        UploadImgCode: { screen: UploadImgCode }
     },
     {
         initialRouteName: 'RootTabNav',

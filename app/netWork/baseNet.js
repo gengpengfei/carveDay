@@ -54,7 +54,9 @@ const NetWork_Post = function (net_api, bodyData, callback) {
         headers: post_header,
         body: JSON.stringify(bodyData)
     };
+
     callback({ code: '1', msg: 'ok', data: {} });
+
     // fetch(url, fetchOptions).then((response) => response.text()).then((responseText) => {
     //     let responseData = JSON.parse(responseText);
     //     callback(responseData);

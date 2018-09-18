@@ -44,8 +44,8 @@
         "route": "Gradient"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "图片上传",
+        "route": "UploadImg"
     },
     {
         "title": "发送验证码倒计时",
