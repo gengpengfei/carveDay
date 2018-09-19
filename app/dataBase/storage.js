@@ -2,12 +2,13 @@
 export function setStorage(key, data, expires = null) {
     var data = {
         key: key.toString(),
-        // id: '1'
+        id: 125,
         data: data
     }
     if (parseInt(expires) > 0) {
-        data.expires = expires
+        data.expires = parseInt(expires);
     }
+    console.log(data)
     storage.save(data);
 }
 // 获取缓存
@@ -15,8 +16,8 @@ export function getStorage(key, callback) {
     storage.load({
         //-- key
         key: key.toString(),
-        //-- 根据key和id进行双重判断
-        // id: '1',
+        //-- 根据key和id进行双重判断(用处不多，暂时不考虑)
+        id: 125,
         //-- 当获取不到数据时，调用相应的同步方法（默认true）
         autoSync: true,
         //-- 如果访问的数据过期，在调用同步方法时是否返回过时的数据（默认true）
