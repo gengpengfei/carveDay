@@ -45,7 +45,8 @@ import GradientCode from './containers/gradient/gradientCode'
 //-- 图片上传
 import UploadImg from './containers/uploadImg/uploadImg'
 import UploadImgCode from './containers/uploadImg/uploadImgCode'
-
+//-- 缓存技术
+import Storages from './containers/storage/storages'
 
 
 
@@ -113,6 +114,7 @@ const AppStock = createStackNavigator(
         GradientCode: { screen: GradientCode },
         UploadImg: { screen: UploadImg },
         UploadImgCode: { screen: UploadImgCode },
+        Storages: { screen: Storages },
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
         Vscode: { screen: Vscode }

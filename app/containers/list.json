@@ -48,8 +48,8 @@
         "route": "UploadImg"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "缓存技术react-native-storage",
+        "route": "Storages"
     },
     {
         "title": "发送验证码倒计时",
