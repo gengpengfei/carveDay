@@ -52,8 +52,8 @@
         "route": "Storages"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "鼠标点击拖拽",
+        "route": "Drag"
     },
     {
         "title": "发送验证码倒计时",

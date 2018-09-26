@@ -48,8 +48,9 @@ import UploadImgCode from './containers/uploadImg/uploadImgCode'
 //-- 缓存技术
 import Storages from './containers/storage/storages'
 import StoragesCode from './containers/storage/storagesCode'
-
-
+//-- 点击拖拽
+import Drag from './containers/drag/drag'
+import DragCode from './containers/drag/dragCode'
 
 
 
@@ -116,6 +117,8 @@ const AppStock = createStackNavigator(
         UploadImgCode: { screen: UploadImgCode },
         Storages: { screen: Storages },
         StoragesCode: { screen: StoragesCode },
+        Drag: { screen: Drag },
+        DragCode: { screen: DragCode },
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
         Vscode: { screen: Vscode }
