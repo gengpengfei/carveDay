@@ -59,6 +59,8 @@ import Flexs from './containers/flex/flexs'
 import FlexAttr from './containers/flex/flexAttr'
 //-- 工具-vscode
 import Vscode from './containers/vscode/vscode'
+//-- 工具-webpack
+import WebPack from './containers/webpack/webpack'
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -121,7 +123,8 @@ const AppStock = createStackNavigator(
         DragCode: { screen: DragCode },
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
-        Vscode: { screen: Vscode }
+        Vscode: { screen: Vscode },
+        WebPack: { screen: WebPack }
     },
     {
         initialRouteName: 'RootTabNav',

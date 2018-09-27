@@ -41,6 +41,13 @@ class Mine extends Component {
                         </View>
                         <View style={{ width: screenWidth / 3, height: screenWidth / 3 - 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
                             <TouchableOpacity
+                                onPress={() => { this.props.navigation.navigate('WebPack') }}
+                            >
+                                <Image source={require('./src/webpack.png')} style={{ width: screenWidth / 3 - 20, height: screenWidth / 3 - 40 }} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={{ width: screenWidth / 3, height: screenWidth / 3 - 20, flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+                            <TouchableOpacity
                                 onPress={() => { this.props.navigation.navigate('Vscode') }}
                             >
                                 <Image source={require('./src/vscode.png')} style={{ width: screenWidth / 3 - 20, height: screenWidth / 3 - 40 }} />
