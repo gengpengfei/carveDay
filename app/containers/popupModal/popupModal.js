@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { View, Text, TouchableOpacity, Image } from 'react-native';
 import Header from '../../components/header'
 import ClickView from '../../components/clickView'
-import { CachedImage, ImageCache } from 'react-native-img-cache'
 import Modal from 'react-native-modalbox'
 export default class PopupModal extends Component {
     constructor(props) {

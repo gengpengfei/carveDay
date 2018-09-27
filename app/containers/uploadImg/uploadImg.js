@@ -50,9 +50,15 @@ export default class UploadImg extends Component {
     //-- 打开相机
     _openCamera() {
         ImagePicker.openCamera({
-            compressImageQuality: 0.2,
+            mediaType: 'photo',//上传的类型（'photo', 'video', 'any' ，默认any）
             includeBase64: true,
-            cropping: true,
+            cropping: true,//-- 是否启用裁剪功能
+            width: 200,
+            height: 200,//-- 与裁剪功能一起使用
+            cropperToolbarTitle: '123',//当裁剪时确定工具栏的标题
+            compressImageMaxWidth: 200, //图像压缩时的最大宽度
+            compressImageMaxHeight: 200,//图像压缩时的最大高度
+            compressImageQuality: 0.2,//图像的压缩比例（0-1的数值）
         }).then(
             (image) => {
                 var data = { data: `data:${image.mime};base64,` + image.data };
@@ -70,11 +76,14 @@ export default class UploadImg extends Component {
     //-- 从相册选择
     _pickMultiple() {
         ImagePicker.openPicker({
-            multiple: true,
-            waitAnimationEnd: false,
-            includeExif: true,
-            includeBase64: true,  //上传数据给后台的必选条件
-            compressImageQuality: 0.2,
+            mediaType: 'photo',//上传的类型（'photo', 'video', 'any' ，默认any）
+            multiple: true, //-- 是否支持多张上传
+            waitAnimationEnd: false,// 仅支持ios
+            includeExif: true,//是否在响应中包含图像的exif数据
+            includeBase64: true,  //是否是base64编码字符上传给后台
+            compressImageMaxWidth: 200, //图像压缩时的最大宽度
+            compressImageMaxHeight: 200,//图像压缩时的最大高度
+            compressImageQuality: 0.2,//图像的压缩比例（0-1的数值）
         }).then(images => {
             images.map((i, index) => {
                 if (this.imgArr.length < 5) {

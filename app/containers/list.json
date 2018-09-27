@@ -56,8 +56,8 @@
         "route": "Drag"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "动画",
+        "route": "Animation"
     },
     {
         "title": "发送验证码倒计时",

@@ -96,6 +96,8 @@ class Home extends Component {
                     onRefresh={() => { }}
                     //-- 是否显示正在加载中
                     refreshing={false}
+                    //-- 样式
+                    style={{ marginBottom: 60 }}
                 />
             </SafeAreaView>
         );

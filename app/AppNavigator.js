@@ -51,8 +51,9 @@ import StoragesCode from './containers/storage/storagesCode'
 //-- 点击拖拽
 import Drag from './containers/drag/drag'
 import DragCode from './containers/drag/dragCode'
-
-
+//-- 动画
+import Animation from './containers/animation/animation'
+import AnimationCode from './containers/animation/animationCode'
 
 //-- 工具-flex 
 import Flexs from './containers/flex/flexs'
@@ -121,6 +122,8 @@ const AppStock = createStackNavigator(
         StoragesCode: { screen: StoragesCode },
         Drag: { screen: Drag },
         DragCode: { screen: DragCode },
+        Animation: { screen: Animation },
+        AnimationCode: { screen: AnimationCode },
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
         Vscode: { screen: Vscode },
