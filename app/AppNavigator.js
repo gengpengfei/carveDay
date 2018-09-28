@@ -54,6 +54,9 @@ import DragCode from './containers/drag/dragCode'
 //-- 动画
 import Animation from './containers/animation/animation'
 import AnimationCode from './containers/animation/animationCode'
+//-- 音视频
+import Video from './containers/video/video'
+import VideoCode from './containers/video/videoCode'
 
 //-- 工具-flex 
 import Flexs from './containers/flex/flexs'
@@ -124,6 +127,8 @@ const AppStock = createStackNavigator(
         DragCode: { screen: DragCode },
         Animation: { screen: Animation },
         AnimationCode: { screen: AnimationCode },
+        Video: { screen: Video },
+        VideoCode: { screen: VideoCode },
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
         Vscode: { screen: Vscode },

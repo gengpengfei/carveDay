@@ -19,6 +19,7 @@
     "react-native-scrollable-tab-view": "^0.8.0",
     "react-native-storage": "^0.2.2",
     "react-native-swiper": "^1.5.13",
+    "react-native-video": "^3.2.1",
     "react-navigation": "^2.14.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
