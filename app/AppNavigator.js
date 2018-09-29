@@ -60,6 +60,9 @@ import VideoCode from './containers/video/videoCode'
 //-- 音频
 import Sound from './containers/sound/sound'
 import SoundCode from './containers/sound/soundCode'
+//-- 滑块
+import Slider from './containers/slider/slider'
+import SliderCode from './containers/slider/sliderCode'
 
 
 //-- 工具-flex 
@@ -69,6 +72,15 @@ import FlexAttr from './containers/flex/flexAttr'
 import Vscode from './containers/vscode/vscode'
 //-- 工具-webpack
 import WebPack from './containers/webpack/webpack'
+
+
+//-- 片段-url传输中文乱码
+import UrlLuanMa from './containers/codes/urlLuanMa'
+//-- 片段-格式化金额
+import FormatFloat from './containers/codes/formatFloat'
+//-- 片段-生命周期
+import Cycle from './containers/codes/生命周期'
+
 //-- 底部tab栏定义
 const RootTabNav = createBottomTabNavigator(
     {
@@ -135,10 +147,17 @@ const AppStock = createStackNavigator(
         VideoCode: { screen: VideoCode },
         Sound: { screen: Sound },
         SoundCode: { screen: SoundCode },
+        Slider: { screen: Slider },
+        SliderCode: { screen: SliderCode },
+
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
         Vscode: { screen: Vscode },
-        WebPack: { screen: WebPack }
+        WebPack: { screen: WebPack },
+
+        UrlLuanMa: { screen: UrlLuanMa },
+        FormatFloat: { screen: FormatFloat },
+        Cycle: { screen: Cycle }
     },
     {
         initialRouteName: 'RootTabNav',

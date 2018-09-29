@@ -68,7 +68,7 @@
         "route": "Sound"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "滑块",
+        "route": "Slider"
     }
 ]
