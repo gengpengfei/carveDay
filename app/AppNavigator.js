@@ -7,7 +7,7 @@ import styles from './theme'
 import Welcome from './containers/welcome/welcome'
 import WelcomeCode from './containers/welcome/welcomeCode'
 import Home from './containers/home/home'
-import Errors from './containers/error/error'
+import Codes from './containers/codes/index'
 import Mine from './containers/mine/mine'
 import Login from './containers/login/login'
 //-- 头部及底部
@@ -54,9 +54,13 @@ import DragCode from './containers/drag/dragCode'
 //-- 动画
 import Animation from './containers/animation/animation'
 import AnimationCode from './containers/animation/animationCode'
-//-- 音视频
+//-- 视频
 import Video from './containers/video/video'
 import VideoCode from './containers/video/videoCode'
+//-- 音频
+import Sound from './containers/sound/sound'
+import SoundCode from './containers/sound/soundCode'
+
 
 //-- 工具-flex 
 import Flexs from './containers/flex/flexs'
@@ -69,7 +73,7 @@ import WebPack from './containers/webpack/webpack'
 const RootTabNav = createBottomTabNavigator(
     {
         Home: { screen: Home },
-        Error: { screen: Errors },
+        Codes: { screen: Codes },
         Mine: { screen: Mine }
     },
     {
@@ -129,6 +133,8 @@ const AppStock = createStackNavigator(
         AnimationCode: { screen: AnimationCode },
         Video: { screen: Video },
         VideoCode: { screen: VideoCode },
+        Sound: { screen: Sound },
+        SoundCode: { screen: SoundCode },
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
         Vscode: { screen: Vscode },

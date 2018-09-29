@@ -128,6 +128,7 @@ export default class VideoPlayer extends Component {
                         }}
                         /* For ExoPlayer */
                         source={{ uri: 'https://gslb.miaopai.com/stream/HNkFfNMuhjRzDd-q6j9qycf54OaKqInVMu0YhQ__.mp4?ssig=bbabfd7684cae53660dc2d4c2103984e&time_stamp=1533631567740&cookie_id=&vend=1&os=3&partner=1&platform=2&cookie_id=&refer=miaopai&scid=HNkFfNMuhjRzDd-q6j9qycf54OaKqInVMu0YhQ__', type: 'mpd' }}
+                        // source={{ uri: 'https://raw.githubusercontent.com/zmxv/react-native-sound-demo/master/advertising.mp3', type: 'mp3' }}
                         //source={require('../../background.mp4')}
                         style={{ width: screenWidth, height: screenWidth * 9 / 16 }}
                         rate={this.state.rate} //-- 播放速度 0.0 - 暂停播放  1.0 - 正常速率播放 

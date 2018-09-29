@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { View, Text, Image } from 'react-native';
-export default class Errors extends Component {
+export default class Index extends Component {
     constructor(props) {
         super(props)
     }
     static navigationOptions = ({ navigation }) => ({
         header: null,
-        tabBarLabel: '错误',
+        tabBarLabel: '片段',
         tabBarIcon: ({ tintColor }) => (
             <Image
                 source={require('../home/src/home.png')}

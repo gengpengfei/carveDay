@@ -17,6 +17,7 @@
     "react-native-linear-gradient": "^2.4.2",
     "react-native-modalbox": "^1.6.0",
     "react-native-scrollable-tab-view": "^0.8.0",
+    "react-native-sound": "^0.10.9",
     "react-native-storage": "^0.2.2",
     "react-native-swiper": "^1.5.13",
     "react-native-video": "^3.2.1",

@@ -11,7 +11,9 @@ export default class VideoCode extends Component {
             }} />,
     })
     render() {
-        var code = `import React, {Component} from 'react';
+        var code = `安装： npm install react-native-video --save
+react-native link
+import React, {Component} from 'react';
 import {
     StyleSheet,
     Text,

@@ -60,12 +60,12 @@
         "route": "Animation"
     },
     {
-        "title": "音视频播放器",
+        "title": "视频播放器",
         "route": "Video"
     },
     {
-        "title": "发送验证码倒计时",
-        "route": "CountDown"
+        "title": "音频播放器",
+        "route": "Sound"
     },
     {
         "title": "发送验证码倒计时",
