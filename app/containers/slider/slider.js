@@ -5,6 +5,9 @@ import ClickView from '../../components/clickView'
 export default class Sliders extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            value: 10
+        }
     }
     static navigationOptions = ({ navigation }) => ({
         header: <Header
@@ -13,9 +16,6 @@ export default class Sliders extends Component {
                 navigation.goBack();
             }} />,
     })
-    state = {
-        value: 0,
-    }
     render() {
         return (
             <View style={{ flex: 1, alignItems: 'center' }}>
@@ -27,7 +27,7 @@ export default class Sliders extends Component {
                     minimumValue={5} //-- 最左侧代表的值
                     maximumValue={20}//-- 最右侧代表的值
                     value={this.state.value} //-- 初始值
-                    step={0.1} //-- 滑动时数值变化量
+                    step={0.2} //-- 滑动时数值变化量
                     onValueChange={(value) => { this.setState({ value: value }) }}  //-- 当滑块滑动时
                     onSlidingComplete={(value) => { this.setState({ value: value }) }} //-- 用户结束滑动的时
                 />
