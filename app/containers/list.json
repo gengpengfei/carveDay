@@ -12,11 +12,11 @@
         "route": "BackAndroid"
     },
     {
-        "title": "轮播图组件react-native-swiper",
+        "title": "轮播图组件 react-native-swiper",
         "route": "SwiperImg"
     },
     {
-        "title": "图片缓存组件react-native-img-cache",
+        "title": "图片缓存组件 react-native-img-cache",
         "route": "ImageCache"
     },
     {
@@ -24,11 +24,11 @@
         "route": "SwitchButton"
     },
     {
-        "title": "弹出层组件react-naive-modalbox",
+        "title": "弹出层组件 react-naive-modalbox",
         "route": "PopupModal"
     },
     {
-        "title": "tab栏切换组件react-native-scrollable-tab-view",
+        "title": "tab栏切换组件 react-native-scrollable-tab-view",
         "route": "ScrollableTab"
     },
     {
@@ -40,7 +40,7 @@
         "route": "WebViews"
     },
     {
-        "title": "背景色渐变组件react-native-linear-gradient",
+        "title": "背景色渐变组件 react-native-linear-gradient",
         "route": "Gradient"
     },
     {
@@ -60,7 +60,7 @@
         "route": "Animation"
     },
     {
-        "title": "视频播放器",
+        "title": "视频播放器 react-native-video",
         "route": "Video"
     },
     {
@@ -69,6 +69,50 @@
     },
     {
         "title": "滑块",
+        "route": "Slider"
+    },
+    {
+        "title": "时间选择器 react-native-datepicker",
+        "route": "DatePick"
+    },
+    {
+        "title": "图表 native-echarts ",
+        "route": "Slider"
+    },
+    {
+        "title": "二维码扫描",
+        "route": "Slider"
+    },
+    {
+        "title": "录音",
+        "route": "Slider"
+    },
+    {
+        "title": "蓝牙",
+        "route": "Slider"
+    },
+    {
+        "title": "文件选择",
+        "route": "Slider"
+    },
+    {
+        "title": "获取联系人",
+        "route": "Slider"
+    },
+    {
+        "title": "屏幕截屏",
+        "route": "Slider"
+    },
+    {
+        "title": "文档查看",
+        "route": "Slider"
+    },
+    {
+        "title": "表格组件",
+        "route": "Slider"
+    },
+    {
+        "title": "生成二维码",
         "route": "Slider"
     }
 ]

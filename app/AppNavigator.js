@@ -63,8 +63,9 @@ import SoundCode from './containers/sound/soundCode'
 //-- 滑块
 import Slider from './containers/slider/slider'
 import SliderCode from './containers/slider/sliderCode'
-
-
+//-- 日期选择器
+import DatePick from './containers/datePick/datePick'
+import DatePickCode from './containers/datePick/datePickCode'
 //-- 工具-flex 
 import Flexs from './containers/flex/flexs'
 import FlexAttr from './containers/flex/flexAttr'
@@ -149,6 +150,8 @@ const AppStock = createStackNavigator(
         SoundCode: { screen: SoundCode },
         Slider: { screen: Slider },
         SliderCode: { screen: SliderCode },
+        DatePick: { screen: DatePick },
+        DatePickCode: { screen: DatePickCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
