@@ -75,6 +75,9 @@ import QRCodeCode from './containers/qrcode/qrcodeCode'
 //-- 二维码扫描
 import ScanCode from './containers/scanCode/scanCode'
 import ScanCodeCode from './containers/scanCode/scanCodeCode'
+//-- 录音
+import Audio from './containers/audio/audio'
+import AudioCode from './containers/audio/audioCode'
 
 
 //-- 工具-flex 
@@ -169,6 +172,8 @@ const AppStock = createStackNavigator(
         QRCodeCode: { screen: QRCodeCode },
         ScanCode: { screen: ScanCode },
         ScanCodeCode: { screen: ScanCodeCode },
+        Audio: { screen: Audio },
+        AudioCode: { screen: AudioCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },

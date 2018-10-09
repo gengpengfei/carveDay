@@ -64,7 +64,7 @@
         "route": "Video"
     },
     {
-        "title": "音频播放器",
+        "title": "音频播放器 react-native-sound",
         "route": "Sound"
     },
     {
@@ -88,12 +88,8 @@
         "route": "ScanCode"
     },
     {
-        "title": "录音",
-        "route": "Slider"
-    },
-    {
-        "title": "蓝牙",
-        "route": "Slider"
+        "title": "录音 react-native-audio",
+        "route": "Audio"
     },
     {
         "title": "文件选择",
