@@ -38,7 +38,7 @@ export default class ScanCode extends Component {
     onBarCodeRead = (result) => {
         const { navigate } = this.props.navigation;
         const { data } = result; //只要拿到data就可以了
-        console.log(data)
+        alert(data);
     };
     render() {
         return (

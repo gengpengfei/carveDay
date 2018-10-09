@@ -1,0 +1,16 @@
+1.method ID not in [0, 0xffff]: 65536
+错误原因是：App中所引用的方法已经超过了最大数65536个方法！ 
+解决方法：
+在android->app下的build.gradle,添加如下代码：
+defaultConfig {
+    ...
+    minSdkVersion 14
+    targetSdkVersion 21
+    ...
+
+    // Enabling multidex support.
+    multiDexEnabled true
+}
+dependencies {
+  compile 'com.android.support:multidex:1.0.0'
+}

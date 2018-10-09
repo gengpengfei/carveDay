@@ -35,7 +35,6 @@ public class MainApplication extends Application implements ReactApplication {
             new ReactVideoPackage(),
             new PickerPackage(),
             new LinearGradientPackage(),
-            new RNFetchBlobPackage(),
             new RNFetchBlobPackage()
       );
     }

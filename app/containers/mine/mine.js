@@ -27,7 +27,7 @@ class Mine extends Component {
     });
     render() {
         return (
-            <View style={{ marginTop: statusbarHeight }}>
+            <View style={{ flex: 1 }}>
                 <View style={{ borderWidth: 2, borderColor: styles.primaryColor }}></View>
                 <View style={{ borderWidth: 1, borderColor: styles.primarySecondaryColor }}></View>
                 <ScrollView>
