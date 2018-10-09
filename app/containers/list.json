@@ -77,11 +77,15 @@
     },
     {
         "title": "图表 native-echarts ",
-        "route": "Slider"
+        "route": "EChart"
     },
     {
-        "title": "二维码扫描",
-        "route": "Slider"
+        "title": "生成二维码 react-native-qrcode",
+        "route": "QRCode"
+    },
+    {
+        "title": "二维码扫描 react-native-camera",
+        "route": "ScanCode"
     },
     {
         "title": "录音",
@@ -109,10 +113,6 @@
     },
     {
         "title": "表格组件",
-        "route": "Slider"
-    },
-    {
-        "title": "生成二维码",
         "route": "Slider"
     }
 ]

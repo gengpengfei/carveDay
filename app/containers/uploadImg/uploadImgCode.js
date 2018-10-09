@@ -209,6 +209,34 @@ export default class UploadImg extends Component {
         )
     }
 }
+
+错误解决：
+1.android环境编译报错
+编译 react-native-image-crop-picker 报错：Could not find com.github.yalantis:ucrop:2.2.1-native
+
+问题原因是 缺少maven源
+
+解决方案
+在 /android/build.gradle，配置多个 maven 源：
+
+allprojects {
+    repositories {
+        mavenLocal()
+        jcenter()
+        maven {
+            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
+            url "$rootDir/../node_modules/react-native/android"
+        }
+        maven { 
+            url "https://jitpack.io" 
+        }
+        maven {
+            url 'https://maven.google.com/'
+            name 'Google'
+        }  
+    }
+}
+
         `;
         return (
             <ScrollView style={{ padding: 10 }}>

@@ -66,6 +66,17 @@ import SliderCode from './containers/slider/sliderCode'
 //-- 日期选择器
 import DatePick from './containers/datePick/datePick'
 import DatePickCode from './containers/datePick/datePickCode'
+//-- 图表
+import EChart from './containers/echarts/echart'
+import EChartCode from './containers/echarts/echartCode'
+//-- 二维码生成
+import QRCode from './containers/qrcode/qrcode'
+import QRCodeCode from './containers/qrcode/qrcodeCode'
+//-- 二维码扫描
+import ScanCode from './containers/scanCode/scanCode'
+import ScanCodeCode from './containers/scanCode/scanCodeCode'
+
+
 //-- 工具-flex 
 import Flexs from './containers/flex/flexs'
 import FlexAttr from './containers/flex/flexAttr'
@@ -152,6 +163,12 @@ const AppStock = createStackNavigator(
         SliderCode: { screen: SliderCode },
         DatePick: { screen: DatePick },
         DatePickCode: { screen: DatePickCode },
+        EChart: { screen: EChart },
+        EChartCode: { screen: EChartCode },
+        QRCode: { screen: QRCode },
+        QRCodeCode: { screen: QRCodeCode },
+        ScanCode: { screen: ScanCode },
+        ScanCodeCode: { screen: ScanCodeCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
