@@ -81,6 +81,12 @@ import AudioCode from './containers/audio/audioCode'
 //-- 截屏
 import Shot from './containers/shot/shot'
 import ShotCode from './containers/shot/shotCode'
+//-- 获取联系人
+import Contacts from './containers/contacts/contacts'
+import ContactsCode from './containers/contacts/contactsCode'
+//-- 文件下载和编辑
+import File from './containers/file/file'
+import FileCode from './containers/file/fileCode'
 
 
 //-- 工具-flex 
@@ -179,6 +185,10 @@ const AppStock = createStackNavigator(
         AudioCode: { screen: AudioCode },
         Shot: { screen: Shot },
         ShotCode: { screen: ShotCode },
+        Contacts: { screen: Contacts },
+        ContactsCode: { screen: ContactsCode },
+        File: { screen: File },
+        FileCode: { screen: FileCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },

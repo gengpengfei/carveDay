@@ -91,24 +91,20 @@
         "title": "录音 react-native-audio",
         "route": "Audio"
     },
-    // {
-    //     "title": "文件选择",
-    //     "route": "Slider"
-    // },
     {
-        "title": "获取联系人",
-        "route": "Slider"
+        "title": "手机通讯录",
+        "route": "Contacts"
     },
     {
         "title": "屏幕截屏",
         "route": "Shot"
     },
     {
-        "title": "文档查看",
-        "route": "Slider"
+        "title": "文件下载和编辑 react-native-fs",
+        "route": "File"
     },
     {
-        "title": "表格组件",
+        "title": "文档预览",
         "route": "Slider"
     }
 ]
