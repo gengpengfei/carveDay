@@ -141,6 +141,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-contacts')
     compile project(':react-native-view-shot')
     compile project(':react-native-audio')
     compile project(':react-native-camera')

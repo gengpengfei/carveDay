@@ -78,6 +78,9 @@ import ScanCodeCode from './containers/scanCode/scanCodeCode'
 //-- 录音
 import Audio from './containers/audio/audio'
 import AudioCode from './containers/audio/audioCode'
+//-- 截屏
+import Shot from './containers/shot/shot'
+import ShotCode from './containers/shot/shotCode'
 
 
 //-- 工具-flex 
@@ -174,6 +177,8 @@ const AppStock = createStackNavigator(
         ScanCodeCode: { screen: ScanCodeCode },
         Audio: { screen: Audio },
         AudioCode: { screen: AudioCode },
+        Shot: { screen: Shot },
+        ShotCode: { screen: ShotCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },

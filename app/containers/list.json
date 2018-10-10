@@ -91,17 +91,17 @@
         "title": "录音 react-native-audio",
         "route": "Audio"
     },
-    {
-        "title": "文件选择",
-        "route": "Slider"
-    },
+    // {
+    //     "title": "文件选择",
+    //     "route": "Slider"
+    // },
     {
         "title": "获取联系人",
         "route": "Slider"
     },
     {
         "title": "屏幕截屏",
-        "route": "Slider"
+        "route": "Shot"
     },
     {
         "title": "文档查看",

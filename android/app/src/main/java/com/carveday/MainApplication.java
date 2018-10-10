@@ -3,6 +3,7 @@ package com.carveday;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.rt2zz.reactnativecontacts.ReactNativeContacts;
 import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 import com.rnim.rn.audio.ReactNativeAudioPackage;
 import org.reactnative.camera.RNCameraPackage;
@@ -32,6 +33,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativeContacts(),
             new RNViewShotPackage(),
             new ReactNativeAudioPackage(),
             new RNCameraPackage(),
