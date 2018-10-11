@@ -106,5 +106,9 @@
     {
         "title": "文档预览",
         "route": "Slider"
+    },
+    {
+        "title": "轻提示 react-native-root-toast",
+        "route": "Toast"
     }
 ]

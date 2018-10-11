@@ -162,7 +162,7 @@ export default class Contact extends Component {
                         this.state.data ? this.state.data.map((item, index) => {
                             console.log(item)
                             return (
-                                <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+                                <View style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 10 }} key={index}>
                                     <Text style={{ flex: 1 }}>姓名：{item.givenName}</Text>
                                     <Text style={{ flex: 2 }}>电话：{item.phoneNumbers.length > 0 ? item.phoneNumbers[0].number : '无'}</Text>
                                 </View>

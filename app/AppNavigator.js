@@ -87,6 +87,9 @@ import ContactsCode from './containers/contacts/contactsCode'
 //-- 文件下载和编辑
 import File from './containers/file/file'
 import FileCode from './containers/file/fileCode'
+//-- toast轻提示
+import Toast from './containers/toast/toast'
+import ToastCode from './containers/toast/toastCode'
 
 
 //-- 工具-flex 
@@ -189,6 +192,8 @@ const AppStock = createStackNavigator(
         ContactsCode: { screen: ContactsCode },
         File: { screen: File },
         FileCode: { screen: FileCode },
+        Toast: { screen: Toast },
+        ToastCode: { screen: ToastCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
