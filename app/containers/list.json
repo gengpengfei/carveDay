@@ -110,5 +110,9 @@
     {
         "title": "轻提示 react-native-root-toast",
         "route": "Toast"
+    },
+    {
+        "title": "缓存管理 react-native-http-cache",
+        "route": "AppCache"
     }
 ]

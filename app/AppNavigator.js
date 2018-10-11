@@ -90,6 +90,9 @@ import FileCode from './containers/file/fileCode'
 //-- toast轻提示
 import Toast from './containers/toast/toast'
 import ToastCode from './containers/toast/toastCode'
+//-- app缓存管理
+import AppCache from './containers/appCache/appCache'
+import AppCacheCode from './containers/appCache/appCacheCode'
 
 
 //-- 工具-flex 
@@ -194,6 +197,9 @@ const AppStock = createStackNavigator(
         FileCode: { screen: FileCode },
         Toast: { screen: Toast },
         ToastCode: { screen: ToastCode },
+        AppCache: { screen: AppCache },
+        AppCacheCode: { screen: AppCacheCode },
+
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
