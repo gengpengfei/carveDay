@@ -114,5 +114,33 @@
     {
         "title": "缓存管理 react-native-http-cache",
         "route": "AppCache"
+    },
+    {
+        "title": "日历组件 react-native-calendars",
+        "route": ""
+    },
+    {
+        "title": "手机手写签名 react-native-sketch",
+        "route": "AppCache"
+    },
+    {
+        "title": "摇一摇 react-native-shake-event",
+        "route": "AppCache"
+    },
+    {
+        "title": "时间轴 react-native-timeline-listview",
+        "route": "AppCache"
+    },
+    {
+        "title": "圆形进度条 react-native-circular-progress",
+        "route": "AppCache"
+    },
+    {
+        "title": "流程图进度 react-native-step-indicator",
+        "route": "AppCache"
+    },
+    {
+        "title": "头部下拉放大 react-native-parallax-view",
+        "route": "AppCache"
     }
 ]
