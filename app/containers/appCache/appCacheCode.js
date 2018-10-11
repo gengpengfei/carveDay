@@ -15,7 +15,11 @@ export default class AppCacheCode extends Component {
 npm install react-native-http-cache --save
 react-native link react-native-http-cache
 
-报错：
+android错误，找不到:
+getSmallImageDiskStorageCache() 改为getMainFileCache
+getMainDickStorageCache()改为getSmallImageFileCache
+
+ios报错：
 是重复导入引起的。注释重复导入的组件即可。
 RCTHttpCache.m文件中注释掉下面3行：
 #import "RCTHttpCache.h"

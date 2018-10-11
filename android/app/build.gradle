@@ -141,6 +141,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-shake-event')
     compile project(':react-native-http-cache')
     compile project(':react-native-fs')
     compile project(':react-native-contacts')

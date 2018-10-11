@@ -121,11 +121,11 @@
     },
     {
         "title": "手机手写签名 react-native-sketch",
-        "route": "AppCache"
+        "route": ""
     },
     {
         "title": "摇一摇 react-native-shake-event",
-        "route": "AppCache"
+        "route": "Shake"
     },
     {
         "title": "时间轴 react-native-timeline-listview",

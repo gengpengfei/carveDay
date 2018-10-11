@@ -26,6 +26,7 @@
     "react-native-qrcode": "^0.2.7",
     "react-native-root-toast": "^3.0.1",
     "react-native-scrollable-tab-view": "^0.8.0",
+    "react-native-shake-event": "^4.0.1",
     "react-native-sound": "^0.10.9",
     "react-native-storage": "^0.2.2",
     "react-native-swiper": "^1.5.13",

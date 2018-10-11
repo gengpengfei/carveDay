@@ -93,6 +93,9 @@ import ToastCode from './containers/toast/toastCode'
 //-- app缓存管理
 import AppCache from './containers/appCache/appCache'
 import AppCacheCode from './containers/appCache/appCacheCode'
+//-- 摇一摇
+import Shake from './containers/shake/shake'
+import ShakeCode from './containers/shake/shakeCode'
 
 
 //-- 工具-flex 
@@ -199,7 +202,8 @@ const AppStock = createStackNavigator(
         ToastCode: { screen: ToastCode },
         AppCache: { screen: AppCache },
         AppCacheCode: { screen: AppCacheCode },
-
+        Shake: { screen: Shake },
+        ShakeCode: { screen: ShakeCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },

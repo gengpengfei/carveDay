@@ -3,6 +3,7 @@ package com.carveday;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.jadsonlourenco.RNShakeEvent.RNShakeEventPackage;
 import cn.reactnative.httpcache.HttpCachePackage;
 import com.rnfs.RNFSPackage;
 import com.rt2zz.reactnativecontacts.ReactNativeContacts;
@@ -35,6 +36,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new RNShakeEventPackage(),
             new HttpCachePackage(),
             new RNFSPackage(),
             new ReactNativeContacts(),
