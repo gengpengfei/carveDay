@@ -87,7 +87,7 @@ class Home extends Component {
                     //-- 设置是否是水平布局
                     horizontal={false}
                     //-- 初始化渲染的数量，最好刚刚填满屏幕
-                    initialNumToRender={10}
+                    initialNumToRender={12}
                     //-- 距离底部多远时触发函数
                     onEndReachedThreshold={0.1}
                     //-- 超过设置的底部距离时触发
