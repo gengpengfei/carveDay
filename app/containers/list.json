@@ -120,8 +120,8 @@
         "route": ""
     },
     {
-        "title": "手机手写签名 react-native-sketch",
-        "route": ""
+        "title": "手机画图 react-native-sketch",
+        "route": "Sketch"
     },
     {
         "title": "摇一摇 react-native-shake-event",
@@ -129,7 +129,7 @@
     },
     {
         "title": "时间轴 react-native-timeline-listview",
-        "route": "AppCache"
+        "route": "TimeLine"
     },
     {
         "title": "圆形进度条 react-native-circular-progress",

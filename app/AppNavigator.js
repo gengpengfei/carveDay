@@ -96,6 +96,12 @@ import AppCacheCode from './containers/appCache/appCacheCode'
 //-- 摇一摇
 import Shake from './containers/shake/shake'
 import ShakeCode from './containers/shake/shakeCode'
+//-- 画图
+import Sketch from './containers/sketch/sketch'
+import SketchCode from './containers/sketch/sketchCode'
+//-- 时间轴
+import TimeLine from './containers/timeLine/timeLine'
+import TimeLineCode from './containers/timeLine/timeLineCode'
 
 
 //-- 工具-flex 
@@ -204,6 +210,10 @@ const AppStock = createStackNavigator(
         AppCacheCode: { screen: AppCacheCode },
         Shake: { screen: Shake },
         ShakeCode: { screen: ShakeCode },
+        Sketch: { screen: Sketch },
+        SketchCode: { screen: SketchCode },
+        TimeLine: { screen: TimeLine },
+        TimeLineCode: { screen: TimeLineCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
