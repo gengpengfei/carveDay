@@ -30,6 +30,7 @@
     "react-native-shake-event": "^4.0.1",
     "react-native-sketch": "^1.1.0",
     "react-native-sound": "^0.10.9",
+    "react-native-step-indicator": "0.0.9",
     "react-native-storage": "^0.2.2",
     "react-native-svg": "^7.0.3",
     "react-native-swiper": "^1.5.13",

@@ -105,6 +105,9 @@ import TimeLineCode from './containers/timeLine/timeLineCode'
 //-- 圆形进度条
 import Progress from './containers/progress/progress'
 import ProgressCode from './containers/progress/progressCode'
+//-- 流程进度图
+import Step from './containers/step/step'
+import StepCode from './containers/step/stepCode'
 
 
 //-- 工具-flex 
@@ -219,6 +222,9 @@ const AppStock = createStackNavigator(
         TimeLineCode: { screen: TimeLineCode },
         Progress: { screen: Progress },
         ProgressCode: { screen: ProgressCode },
+        Step: { screen: Step },
+        StepCode: { screen: StepCode },
+
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },

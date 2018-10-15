@@ -137,7 +137,7 @@
     },
     {
         "title": "流程图进度 react-native-step-indicator",
-        "route": "AppCache"
+        "route": "Step"
     },
     {
         "title": "头部下拉放大 react-native-parallax-view",
