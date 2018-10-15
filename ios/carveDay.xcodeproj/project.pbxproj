@@ -55,6 +55,8 @@
 		D4B99616D2C444CD99BAD067 /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C375B73A98048B0B2CE6323 /* libRNFS.a */; };
 		C083C0D8861449B2AD266C01 /* libRNShakeEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1023EC7FDE2F45E5B7EF733C /* libRNShakeEvent.a */; };
 		F1B4BD15985F41E7A311551B /* libRNSketch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB04A83721114902BC138E4B /* libRNSketch.a */; };
+		4F05916612D64EA2965A666D /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AFDAA40870482C830C75C7 /* libRNSVG.a */; };
+		CB0DD5DE1B0F4202B6EC603C /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9C8215BA9E43B9A2C83F49 /* libRNSVG-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -502,6 +504,9 @@
 		1023EC7FDE2F45E5B7EF733C /* libRNShakeEvent.a */ = {isa = PBXFileReference; name = "libRNShakeEvent.a"; path = "libRNShakeEvent.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		27E7009A1D7E49E4A1A48625 /* RNSketch.xcodeproj */ = {isa = PBXFileReference; name = "RNSketch.xcodeproj"; path = "../node_modules/react-native-sketch/RNSketch.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		BB04A83721114902BC138E4B /* libRNSketch.a */ = {isa = PBXFileReference; name = "libRNSketch.a"; path = "libRNSketch.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		79FAE7523B5A410D873275BC /* RNSVG.xcodeproj */ = {isa = PBXFileReference; name = "RNSVG.xcodeproj"; path = "../node_modules/react-native-svg/ios/RNSVG.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		F6AFDAA40870482C830C75C7 /* libRNSVG.a */ = {isa = PBXFileReference; name = "libRNSVG.a"; path = "libRNSVG.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		AA9C8215BA9E43B9A2C83F49 /* libRNSVG-tvOS.a */ = {isa = PBXFileReference; name = "libRNSVG-tvOS.a"; path = "libRNSVG-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +550,7 @@
 				6F44C38A35C446648E345DA7 /* libRCTHttpCache.a in Frameworks */,
 				C083C0D8861449B2AD266C01 /* libRNShakeEvent.a in Frameworks */,
 				F1B4BD15985F41E7A311551B /* libRNSketch.a in Frameworks */,
+				4F05916612D64EA2965A666D /* libRNSVG.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +566,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				CB0DD5DE1B0F4202B6EC603C /* libRNSVG-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -853,6 +860,7 @@
 				ADC79C9F4D46483E8F519BF2 /* RCTHttpCache.xcodeproj */,
 				8C3F2387ABA3412B8AEB227E /* RNShakeEvent.xcodeproj */,
 				27E7009A1D7E49E4A1A48625 /* RNSketch.xcodeproj */,
+				79FAE7523B5A410D873275BC /* RNSVG.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1635,12 +1643,15 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = carveDayTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1685,12 +1696,15 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = carveDayTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1737,6 +1751,7 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = carveDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1772,6 +1787,7 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = carveDay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1813,11 +1829,14 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = "carveDay-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1872,11 +1891,14 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = "carveDay-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1930,11 +1952,14 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = "carveDay-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
@@ -1988,11 +2013,14 @@
 					"$(SRCROOT)/../node_modules/react-native-http-cache/ios/RCTHttpCache",
 					"$(SRCROOT)/../node_modules/react-native-shake-event/ios",
 					"$(SRCROOT)/../node_modules/react-native-sketch/RNSketch",
+					"$(SRCROOT)/../node_modules/react-native-svg/ios/**",
 				);
 				INFOPLIST_FILE = "carveDay-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",

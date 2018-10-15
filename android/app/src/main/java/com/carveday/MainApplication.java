@@ -3,6 +3,7 @@ package com.carveday;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.horcrux.svg.SvgPackage;
 import com.jadsonlourenco.RNShakeEvent.RNShakeEventPackage;
 import cn.reactnative.httpcache.HttpCachePackage;
 import com.rnfs.RNFSPackage;
@@ -36,6 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SvgPackage(),
             new RNShakeEventPackage(),
             new HttpCachePackage(),
             new RNFSPackage(),

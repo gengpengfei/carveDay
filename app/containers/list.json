@@ -133,7 +133,7 @@
     },
     {
         "title": "圆形进度条 react-native-circular-progress",
-        "route": "AppCache"
+        "route": "Progress"
     },
     {
         "title": "流程图进度 react-native-step-indicator",
