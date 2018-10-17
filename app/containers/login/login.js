@@ -15,7 +15,7 @@ class Home extends Component {
     render() {
         return (
             <View>
-                <Text>登陆也</Text>
+                <Text>登陆页</Text>
             </View>
         );
     }

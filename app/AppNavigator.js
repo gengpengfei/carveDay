@@ -120,6 +120,9 @@ import OrientationCode from './containers/orientation/orientationCode'
 //-- 闪光灯控制
 import Torch from './containers/torch/torch'
 import TorchCode from './containers/torch/torchCode'
+//-- 高德定位
+import Geolocation from './containers/geolocation/geolocation'
+import GeolocationCode from './containers/geolocation/geolocationCode'
 
 
 //-- 工具-flex 
@@ -244,6 +247,8 @@ const AppStock = createStackNavigator(
         OrientationCode: { screen: OrientationCode },
         Torch: { screen: Torch },
         TorchCode: { screen: TorchCode },
+        Geolocation: { screen: Geolocation },
+        GeolocationCode: { screen: GeolocationCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },
