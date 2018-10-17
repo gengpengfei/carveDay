@@ -141,6 +141,34 @@
     },
     {
         "title": "头部下拉放大 react-native-parallax-view",
-        "route": "AppCache"
+        "route": "Parallax"
+    },
+    {
+        "title": "获取手机设备信息 react-native-device-info",
+        "route": "Device"
+    },
+    {
+        "title": "判断横竖屏 react-native-orientation",
+        "route": "Amap"
+    },
+    {
+        "title": "读取pdf文档 react-native-pdf-view",
+        "route": "Amap"
+    },
+    {
+        "title": "开启闪光灯 react-native-torch",
+        "route": "Amap"
+    },
+    {
+        "title": "视频直播 react-native-agora",
+        "route": "Amap"
+    },
+    {
+        "title": "高德地图定位 react-native-amap-geolocation",
+        "route": "Geolocation"
+    },
+    {
+        "title": "高德地图导航 react-native-amap3d",
+        "route": "Amap"
     }
 ]

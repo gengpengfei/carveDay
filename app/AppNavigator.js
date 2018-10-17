@@ -108,6 +108,9 @@ import ProgressCode from './containers/progress/progressCode'
 //-- 流程进度图
 import Step from './containers/step/step'
 import StepCode from './containers/step/stepCode'
+//-- scrollView 下拉图片放大刷新
+import Parallax from './containers/parallax/parallax'
+import ParallaxCode from './containers/parallax/parallaxCode'
 
 
 //-- 工具-flex 
@@ -224,6 +227,8 @@ const AppStock = createStackNavigator(
         ProgressCode: { screen: ProgressCode },
         Step: { screen: Step },
         StepCode: { screen: StepCode },
+        Parallax: { screen: Parallax },
+        ParallaxCode: { screen: ParallaxCode },
 
 
         Flexs: { screen: Flexs },

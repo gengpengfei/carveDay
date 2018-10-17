@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, ListView, FlatList } from 'react-native';
 import StepIndicator from 'react-native-step-indicator';
-import dummyData from './data';
-
+import Header from '../../components/header'
+import ClickView from '../../components/clickView'
 const stepIndicatorStyles = {
     stepIndicatorSize: 30,
     currentStepIndicatorSize: 40,
@@ -24,17 +24,48 @@ const stepIndicatorStyles = {
     currentStepLabelColor: '#fe7013'
 }
 
-export default class VerticalStepIndicator extends Component {
+export default class Step extends Component {
 
     constructor() {
         super();
-
         this.state = {
-            currentPage: 0
+            currentPage: 0,
+            data: [
+                {
+                    title: 'Preface',
+                    body: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes'
+                },
+                {
+                    title: 'Introduction',
+                    body: 'Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut '
+                },
+                {
+                    title: 'Chapter 1',
+                    body: 'Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vesti'
+                },
+                {
+                    title: 'Chapter 2',
+                    body: 'Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan '
+                },
+                {
+                    title: 'Chapter 3',
+                    body: 'Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi ve'
+                },
+                {
+                    title: 'About',
+                    body: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium'
+                }
+            ]
         };
         this.viewabilityConfig = { itemVisiblePercentThreshold: 40 }
     }
-
+    static navigationOptions = ({ navigation }) => ({
+        header: <Header
+            title='流程进度'
+            backPress={() => {
+                navigation.goBack();
+            }} />,
+    })
     render() {
         return (
             <View style={styles.container}>
@@ -44,16 +75,18 @@ export default class VerticalStepIndicator extends Component {
                         stepCount={6}
                         direction='vertical'
                         currentPosition={this.state.currentPage}
-                        labels={dummyData.data.map(item => item.title)}
+                        labels={this.state.data.map(item => item.title)}
                     />
                 </View>
                 <FlatList
                     style={{ flexGrow: 1 }}
-                    data={dummyData.data}
+                    keyExtractor={(item, index) => index.toString()}
+                    data={this.state.data}
                     renderItem={this.renderPage}
                     onViewableItemsChanged={this.onViewableItemsChanged}
                     viewabilityConfig={this.viewabilityConfig}
                 />
+                <ClickView {...this.props} />
             </View>
         );
     }
@@ -83,8 +116,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#ffffff'
     },
     stepIndicator: {
-        marginVertical: 50,
-        paddingHorizontal: 20
+        paddingHorizontal: 10
     },
     rowItem: {
         flex: 3,
