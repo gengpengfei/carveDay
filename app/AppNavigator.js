@@ -111,6 +111,15 @@ import StepCode from './containers/step/stepCode'
 //-- scrollView 下拉图片放大刷新
 import Parallax from './containers/parallax/parallax'
 import ParallaxCode from './containers/parallax/parallaxCode'
+//-- 获取设备信息
+import Device from './containers/device/device'
+import DeviceCode from './containers/device/deviceCode'
+//-- 横竖屏控制
+import Orientation from './containers/orientation/orientation'
+import OrientationCode from './containers/orientation/orientationCode'
+//-- 闪光灯控制
+import Torch from './containers/torch/torch'
+import TorchCode from './containers/torch/torchCode'
 
 
 //-- 工具-flex 
@@ -229,7 +238,12 @@ const AppStock = createStackNavigator(
         StepCode: { screen: StepCode },
         Parallax: { screen: Parallax },
         ParallaxCode: { screen: ParallaxCode },
-
+        Device: { screen: Device },
+        DeviceCode: { screen: DeviceCode },
+        Orientation: { screen: Orientation },
+        OrientationCode: { screen: OrientationCode },
+        Torch: { screen: Torch },
+        TorchCode: { screen: TorchCode },
 
         Flexs: { screen: Flexs },
         FlexAttr: { screen: FlexAttr },

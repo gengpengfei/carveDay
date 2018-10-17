@@ -104,10 +104,6 @@
         "route": "File"
     },
     {
-        "title": "文档预览",
-        "route": "Slider"
-    },
-    {
         "title": "轻提示 react-native-root-toast",
         "route": "Toast"
     },
@@ -148,20 +144,20 @@
         "route": "Device"
     },
     {
-        "title": "判断横竖屏 react-native-orientation",
-        "route": "Amap"
+        "title": "横竖屏控制 react-native-orientation",
+        "route": "Orientation"
+    },
+    {
+        "title": "闪光灯控制 react-native-torch",
+        "route": "Torch"
     },
     {
         "title": "读取pdf文档 react-native-pdf-view",
-        "route": "Amap"
-    },
-    {
-        "title": "开启闪光灯 react-native-torch",
-        "route": "Amap"
+        "route": "Pdf"
     },
     {
         "title": "视频直播 react-native-agora",
-        "route": "Amap"
+        "route": "Agora"
     },
     {
         "title": "高德地图定位 react-native-amap-geolocation",
