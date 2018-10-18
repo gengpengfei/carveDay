@@ -49,9 +49,7 @@ PODS:
   - yoga (0.55.4.React)
 
 DEPENDENCIES:
-  - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
-  - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - react-native-amap-geolocation (from `../node_modules/react-native-amap-geolocation/lib/ios`)
   - React/Core (from `../node_modules/react-native`)
   - React/CxxBridge (from `../node_modules/react-native`)
@@ -67,14 +65,12 @@ SPEC REPOS:
     - AMapFoundation
     - AMapLocation
     - boost-for-react-native
+    - DoubleConversion
+    - glog
 
 EXTERNAL SOURCES:
-  DoubleConversion:
-    :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
   Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
-  glog:
-    :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
   React:
     :path: "../node_modules/react-native"
   react-native-amap-geolocation:
@@ -93,6 +89,6 @@ SPEC CHECKSUMS:
   react-native-amap-geolocation: 86a40d13992b4c7e9bf9a9ed3b21ec5f2c151063
   yoga: a23273df0088bf7f2bb7e5d7b00044ea57a2a54a
 
-PODFILE CHECKSUM: 414daec873e6a8462f252c994bac0f1670df4764
+PODFILE CHECKSUM: 80e8b878a49780c2af095b1823883875f9014692
 
 COCOAPODS: 1.5.3
