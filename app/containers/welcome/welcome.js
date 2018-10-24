@@ -49,7 +49,7 @@ class Welcome extends Component {
                 <StatusBar
                     animated={true} //指定状态栏的变化是否应以动画形式呈现
                     hidden={false}  //是否隐藏状态栏。  
-                    // backgroundColor={'green'} //状态栏的背景色  
+                    // backgroundColor={'green'} //状态栏的背景色
                     translucent={true}//指定状态栏是否透明。设置为true时，应用会在状态栏之下绘制（即所谓“沉浸式”——被状态栏遮住一部分）。常和带有半透明背景色的状态栏搭配使用。  
                     barStyle={'default'} // enum('default', 'light-content', 'dark-content')   
                 />

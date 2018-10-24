@@ -6,7 +6,6 @@ import com.facebook.react.ReactApplication;
 import com.github.yamill.orientation.OrientationPackage;
 import com.learnium.RNDeviceInfo.RNDeviceInfo;
 import com.cubicphuse.RCTTorch.RCTTorchPackage;
-import cn.qiuxiang.react.geolocation.AMapGeolocationPackage;
 import com.horcrux.svg.SvgPackage;
 import com.jadsonlourenco.RNShakeEvent.RNShakeEventPackage;
 import cn.reactnative.httpcache.HttpCachePackage;
@@ -44,7 +43,6 @@ public class MainApplication extends Application implements ReactApplication {
             new OrientationPackage(),
             new RNDeviceInfo(),
             new RCTTorchPackage(),
-            new AMapGeolocationPackage(),
             new SvgPackage(),
             new RNShakeEventPackage(),
             new HttpCachePackage(),
