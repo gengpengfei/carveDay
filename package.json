@@ -36,6 +36,7 @@
     "react-native-step-indicator": "0.0.9",
     "react-native-storage": "^0.2.2",
     "react-native-svg": "^7.0.3",
+    "react-native-swipeout": "^2.3.6",
     "react-native-swiper": "^1.5.13",
     "react-native-timeline-listview": "^0.2.3",
     "react-native-torch": "^1.1.4",

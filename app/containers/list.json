@@ -152,6 +152,10 @@
         "route": "Torch"
     },
     {
+        "title": "侧滑删除 react-native-swipeout",
+        "route": "Swipeout"
+    },
+    {
         "title": "读取pdf文档 react-native-pdf-view",
         "route": "Pdf"
     },

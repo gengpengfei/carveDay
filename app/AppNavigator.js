@@ -120,6 +120,9 @@ import OrientationCode from './containers/orientation/orientationCode'
 //-- 闪光灯控制
 import Torch from './containers/torch/torch'
 import TorchCode from './containers/torch/torchCode'
+//-- 侧滑删除
+import Swipeout from './containers/swipeout/swipeout'
+import SwipeoutCode from './containers/swipeout/swipeoutCode'
 //-- 高德定位
 import Geolocation from './containers/geolocation/geolocation'
 import GeolocationCode from './containers/geolocation/geolocationCode'
@@ -247,6 +250,8 @@ const AppStock = createStackNavigator(
         OrientationCode: { screen: OrientationCode },
         Torch: { screen: Torch },
         TorchCode: { screen: TorchCode },
+        Swipeout: { screen: Swipeout },
+        SwipeoutCode: { screen: SwipeoutCode },
         Geolocation: { screen: Geolocation },
         GeolocationCode: { screen: GeolocationCode },
 
