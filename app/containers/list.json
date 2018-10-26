@@ -144,8 +144,12 @@
         "route": "Device"
     },
     {
-        "title": "横竖屏控制 react-native-orientation",
+        "title": "横竖屏切换 react-native-orientation",
         "route": "Orientation"
+    },
+    {
+        "title": "禁用横竖屏切换",
+        "route": "NoOrientation"
     },
     {
         "title": "闪光灯控制 react-native-torch",

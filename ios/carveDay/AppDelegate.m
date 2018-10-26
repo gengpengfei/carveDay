@@ -31,5 +31,9 @@
   [self.window makeKeyAndVisible];
   return YES;
 }
-
+//禁止横竖屏转动
+//- (NSUInteger)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
+//{
+//  return UIInterfaceOrientationMaskPortrait;
+//}
 @end

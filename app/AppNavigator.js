@@ -117,6 +117,8 @@ import DeviceCode from './containers/device/deviceCode'
 //-- 横竖屏控制
 import Orientation from './containers/orientation/orientation'
 import OrientationCode from './containers/orientation/orientationCode'
+//-- 禁止横竖屏
+import NoOrientation from './containers/orientation/noOrientationCode'
 //-- 闪光灯控制
 import Torch from './containers/torch/torch'
 import TorchCode from './containers/torch/torchCode'
@@ -248,6 +250,7 @@ const AppStock = createStackNavigator(
         DeviceCode: { screen: DeviceCode },
         Orientation: { screen: Orientation },
         OrientationCode: { screen: OrientationCode },
+        NoOrientation: { screen: NoOrientation },
         Torch: { screen: Torch },
         TorchCode: { screen: TorchCode },
         Swipeout: { screen: Swipeout },
