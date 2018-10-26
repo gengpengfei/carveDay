@@ -125,6 +125,10 @@ import TorchCode from './containers/torch/torchCode'
 //-- 侧滑删除
 import Swipeout from './containers/swipeout/swipeout'
 import SwipeoutCode from './containers/swipeout/swipeoutCode'
+//-- 显示pdf文档
+import Pdf from './containers/pdf/pdf'
+import PdfCode from './containers/pdf/pdfCode'
+
 //-- 高德定位
 import Geolocation from './containers/geolocation/geolocation'
 import GeolocationCode from './containers/geolocation/geolocationCode'
@@ -255,6 +259,8 @@ const AppStock = createStackNavigator(
         TorchCode: { screen: TorchCode },
         Swipeout: { screen: Swipeout },
         SwipeoutCode: { screen: SwipeoutCode },
+        Pdf: { screen: Pdf },
+        PdfCode: { screen: PdfCode },
         Geolocation: { screen: Geolocation },
         GeolocationCode: { screen: GeolocationCode },
 

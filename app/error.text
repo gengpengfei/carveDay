@@ -27,3 +27,33 @@ dependencies {
       classpath 'com.android.tools.build:gradle:3.1.4'
   }
   ```   
+
+* **报错**
+
+  ```
+  安装react-native-pdf-view 报错 
+  ```
+  错误一：Redefinition of 'RCTMethodInfo' 等一系列错误
+  解决方法：xcode 找到`RNPDFView.xcodeproj`,修改里面的引用
+
+  #import "RCTEventDispatcher.h"
+  #import "RCTBridge.h"
+  #import "RCTBridgeModule.h"
+
+  修改为：
+  ```
+  #import <React/RCTEventDispatcher.h>
+  #import <React/RCTBridge.h>
+  #import <React/RCTBridgeModule.h>
+  ```   
+  错误二：找不到入口index.js文件
+  解决方法：找到react-native-pdf-view/package.json文件,修改里面main
+  ```
+    "main": "./index.js",
+  ```
+  错误三：propType 使用报错，使用了老的引用方式
+  解决方法：找到react-native-pdf-view/PDFView.ios.js文件,修改
+   ```
+  import React, { Component } from 'react';
+  import PropTypes from 'prop-types'
+  ```
