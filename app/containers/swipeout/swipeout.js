@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, TouchableOpacity, FlatList, Image } from 'react-native';
+import { View, Text, TouchableOpacity, FlatList, Image, TextInput } from 'react-native';
 import Header from '../../components/header'
 import ClickView from '../../components/clickView'
 import Swipeout from 'react-native-swipeout'
@@ -7,20 +7,36 @@ export default class Swipeouts extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            data: [
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' }
+            ],
+            rowIndex: null,
             refreshing: true
         }
         this.swipeoutBtns = [
             {
                 text: 'Button',
-                backgroundColor: '#fff',
-                color: 'red',
-                component: null,//-- 自定义组件,
-                onPress: () => { },
+                backgroundColor: '#f55d00',
+                color: '#fff',
+                // component: null,//-- 自定义组件,
+                onPress: () => { this.swipeHandleDelete() },
                 text: '删除',
-                type: 'default',// --  default, delete, primary, secondary
-                underlayColor: '#fff', //-- 按钮按下的颜色
-                disabled: true
+                // type: 'delete',// --  default, delete, primary, secondary
+                underlayColor: '#ff7733', //-- 按钮按下的颜色
+                // disabled: false
             }
         ]
     }
@@ -39,36 +55,73 @@ export default class Swipeouts extends Component {
             })
         }, 2000);
     }
-    renderTtem = (item) => {
+    onSwipeOpen(rowIndex) {
+        this.setState({
+            rowIndex: rowIndex
+        })
+    }
+    onSwipeClose(rowIndex) {
+        if (rowIndex === this.state.rowIndex) {
+            this.setState({ rowIndex: null });
+        }
+    }
+    swipeHandleDelete() {
+        const { rowIndex } = this.state;
+        this.state.data.splice(parseInt(rowIndex), 1);
+        this.setState({
+            rowIndex: null
+        })
+        this.setState({
+            data: this.state.data,
+        })
+    }
+    _renderItem = (item, index) => {
         return (
             <Swipeout
                 style={{ width: screenWidth }}
-                disabled={false}
+                disabled={false}  //-- 是否关闭侧滑
                 backgroundColor='#f9f9f9'
-                close={true}
-                sensitivity={50} //-- 敏感度
-                buttonWidth={50} //-- 按钮的宽度
+                close={this.state.rowIndex !== index} //-- 判断当前打开还是关闭
+                sensitivity={40} //-- 敏感度
+                buttonWidth={80} //-- 按钮的宽度
                 // left={this.swipeoutBtns} //-- 左侧按钮
                 right={this.swipeoutBtns}//-- 右侧按钮
-                onClose={(sectionID, rowId, direction) => { }}  //-- 关闭时回调
-                onOpen={(sectionID, rowId, direction) => { }} //-- 打开时回调
-                autoClose={true} //-- 侧滑时是否自动触发按钮事件
+                onClose={() => (this.onSwipeClose(index))}  //-- 关闭时回调
+                onOpen={() => (this.onSwipeOpen(index))} //-- 打开时回调
+                autoClose={false} //-- 侧滑时是否自动触发按钮事件
+                rowIndex={index}  //-- 绑定index
+                sectionId={0}
             // scroll={() => { }}  //-- 防止父级滑动
             >
-                <View styel={{width: screenWidth , justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row', borderColor: 'red', borderWidth: 1  }}>
-                    <View style={{ height: 60, width: 60 }}>
-                        <Image style={{ width: 40, height: 40, borderRadius: 20 }} source={require('./src/header.jpg')} />
+                <View style={{ flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center', paddingVertical: 5, width: screenWidth, height: 50, borderBottomWidth: 1, borderColor: '#e6e6e6' }}>
+                    <View style={{ width: screenWidth / 4, alignItems: 'center', justifyContent: 'center' }}>
+                        <Text style={{ fontSize: 12, color: '#4a4a4a' }}>{item.name}</Text>
+                    </View >
+                    <View style={{ width: screenWidth / 4, alignItems: 'center', justifyContent: 'center' }}>
+                        <Text style={{ fontSize: 12, color: '#4a4a4a' }}>{item.id}</Text>
                     </View>
-                    <View style={{ height: 60, width: screenWidth - 50 }}>
-                        <View style={{ justifyContent: 'space-between', alignItems: 'center', flexDirection: 'row' }}>
-                            <Text>请叫我耿先生-{item.item}</Text>
-                            <Text>2018-10-12</Text>
-                        </View>
-                        <Text>Swipe me left{item.item}</Text>
+                    <View style={{ width: screenWidth / 4, alignItems: 'center', justifyContent: 'center' }}>
+                        <Text style={{ fontSize: 12, color: '#4a4a4a' }}>{item.tabel}</Text>
+                    </View>
+                    <View style={{ width: screenWidth / 4, alignItems: 'center', justifyContent: 'center' }}>
+                        <TextInput
+                            style={{ height: 30, width: 50, borderColor: "#f63300", borderRadius: 4, borderWidth: 1, textAlign: 'center', margin: 0, padding: 0 }}
+                            underlineColorAndroid="transparent"
+                            onChangeText={
+                                (textValue) => {
+                                    this.state.dbList[index].groundingNum = textValue
+                                    this.setState({
+                                        dbList: this.state.dbList
+                                    })
+                                }
+                            }
+                            value={item.groundingNum}
+                            maxLength={4}
+                        />
                     </View>
                 </View>
             </Swipeout>
-        )
+        );
     }
     // scrollToEnd
     // 滚动到底部。如果不设置getItemLayout
@@ -104,13 +157,45 @@ export default class Swipeouts extends Component {
     //-- 上拉加载
     onEndReached = () => {
         this.setState({
-            data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
+            data: [
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' }
+            ],
         })
     }
     //-- 下拉刷新
     onRefresh = () => {
         this.setState({
-            data: [2, 1, 3, 4, 6, 5, 8, 9, 4, 5, 6, 7]
+            data: [
+                { name: 'A', id: '001', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '020', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '001', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '002', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '010', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' },
+                { name: 'A', id: '01', tabel: '标准库位', groundingNum: '10' },
+                { name: 'B', id: '02', tabel: '标准库位', groundingNum: '10' }
+            ],
         })
     }
     render() {
@@ -131,7 +216,7 @@ export default class Swipeouts extends Component {
                     getItem={null}  //-- 获取每个item
                     getItemCount={null} //-- 获取Item属相
                     getItemLayout={(data, index) => ({ length: 50, offset: 50 * index, index })}//--行高是固定的,getItemLayout是优化组件高度的计算，(注意如果你指定了SeparatorComponent，请把分隔线的尺寸也考虑到offset的计算之中。)
-                    renderItem={this.renderTtem} //--渲染每一行的组件
+                    renderItem={({ item, index }) => this._renderItem(item, index)} //--渲染每一行的组件
                     onEndReachedThreshold={0.5}//--距离内容最底部多远时触发onEndReached回调。0.5表示距离内容最底部的距离为当前列表可见长度的一半时触发。
                     onEndReached={() => this.onEndReached}//--当列表被滚动到距离内容最底部不足onEndReachedThreshold的距离时调用。
                     onRefresh={() => this.onRefresh}//-- 实现“下拉刷新”的功能。需要正确设置refreshing属性。
