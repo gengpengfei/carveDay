@@ -14,3 +14,16 @@ defaultConfig {
 dependencies {
   compile 'com.android.support:multidex:1.0.0'
 }
+
+* **报错**
+
+  ```
+  安装react-native-camera 报错
+  ```
+  解决方法：找到`/node_modules/react-native-camera/android/build.gradle`,修改
+
+  ```
+  dependencies {
+      classpath 'com.android.tools.build:gradle:3.1.4'
+  }
+  ```   
