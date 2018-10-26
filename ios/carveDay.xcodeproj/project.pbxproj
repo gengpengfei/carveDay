@@ -13,7 +13,6 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* carveDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* carveDayTests.m */; };
-		03A5E21EB7494107B1EF7D53 /* libRCTHttpCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6746A33D63D46AD871CB060 /* libRCTHttpCache.a */; };
 		11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -22,10 +21,8 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		14062262058042B2B314D82C /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0677D172E8A340C3885C3127 /* libimageCropPicker.a */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
-		2643524F0BC8433C8B5B21BC /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4088BFE0E1A0406B951BF2CD /* libRNFS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -39,24 +36,27 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* carveDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* carveDayTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
-		3E6B49F072054DE6937E4A7E /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61F335908BF04490A9CE557D /* libRNSVG.a */; };
-		4055C3F7E8E348959D971907 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4C8D1DFC31A4FEA9F6C553A /* libRCTOrientation.a */; };
 		44ECDEF7E9B14258AEF9A871 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561F51958FF44C79BE2BD70B /* libRNSVG-tvOS.a */; };
-		454CE2959B54438E8A0FAF81 /* libRNViewShot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D0D08467844D6596EDBFF6 /* libRNViewShot.a */; };
-		6569476371A84C539A759992 /* libRCTContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E153ACEF44411AB748BD7E /* libRCTContacts.a */; };
-		6B84793252DC4DA0A8307A29 /* libRNAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 663778D851214505BCE73C52 /* libRNAudio.a */; };
-		703E89DE4A684292A8CFB1EB /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA4EEF8E8B44B3C9D7C2421 /* libRNCamera.a */; };
+		489497002182AB0A003FC2D8 /* libRNAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3DB21785DBC00E0F7DA /* libRNAudio.a */; };
+		489497012182AB29003FC2D8 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3DE21785DBC00E0F7DA /* libRNCamera.a */; };
+		489497022182AB3C003FC2D8 /* libRCTContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3C921785DBC00E0F7DA /* libRCTContacts.a */; };
+		489497032182AB49003FC2D8 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3E221785DBC00E0F7DA /* libRNDeviceInfo.a */; };
+		489497042182AB56003FC2D8 /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3E721785DBC00E0F7DA /* libRNFetchBlob.a */; };
+		489497052182AB61003FC2D8 /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3EB21785DBC00E0F7DA /* libRNFS.a */; };
+		489497062182AB6E003FC2D8 /* libRCTHttpCache.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3CC21785DBC00E0F7DA /* libRCTHttpCache.a */; };
+		489497072182AB7A003FC2D8 /* libimageCropPicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3C621785DBC00E0F7DA /* libimageCropPicker.a */; };
+		489497082182AB85003FC2D8 /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3C121785DBC00E0F7DA /* libBVLinearGradient.a */; };
+		489497092182AB91003FC2D8 /* libRCTOrientation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3CF21785DBC00E0F7DA /* libRCTOrientation.a */; };
+		4894970A2182AB9B003FC2D8 /* libRNShakeEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3F021785DBC00E0F7DA /* libRNShakeEvent.a */; };
+		4894970B2182ABA3003FC2D8 /* libRNSketch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3F321785DBC00E0F7DA /* libRNSketch.a */; };
+		4894970C2182ABAC003FC2D8 /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3F621785DBC00E0F7DA /* libRNSound.a */; };
+		4894970D2182ABB4003FC2D8 /* libRNSVG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3FA21785DBC00E0F7DA /* libRNSVG.a */; };
+		4894970E2182ABBD003FC2D8 /* libRCTTorch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3D221785DBC00E0F7DA /* libRCTTorch.a */; };
+		4894970F2182ABC6003FC2D8 /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3D621785DBC00E0F7DA /* libRCTVideo.a */; };
+		489497102182ABCF003FC2D8 /* libRNViewShot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3FF21785DBC00E0F7DA /* libRNViewShot.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		85A1C69D0654440A803C7BCF /* libRNFetchBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C6A99CC4314FCC817063EA /* libRNFetchBlob.a */; };
 		8728DA7C7C844E618455A289 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9F1DB898D24747A8F59979 /* libRNDeviceInfo-tvOS.a */; };
-		915D91B7BC0A4886AE2FE3B4 /* libRNDeviceInfo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D6A9DCF97404789A62F54B2 /* libRNDeviceInfo.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
-		BD32CC43EB524B2780C223D0 /* libRNSketch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1100FAFC63724EF38ED0F3DD /* libRNSketch.a */; };
-		CF4ED2BA4F6746EDBCAA180E /* libRCTTorch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F5D976F9564F458A894728 /* libRCTTorch.a */; };
-		DB6F7EF2AC5F40B99F04D05A /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6109B5846BEB4A238BBB4FC7 /* libBVLinearGradient.a */; };
-		E0E5D0CC8FCA4CDE9ACDF737 /* libRNShakeEvent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEAADDD708941E090B2778F /* libRNShakeEvent.a */; };
-		F3273C72AE9E4588B8CB770B /* libRCTVideo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 367561CDF7DC46DB85279F38 /* libRCTVideo.a */; };
-		FB6D64D77BBC4F95A4F2DCEB /* libRNSound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30BE6CB9ED37461591330B9D /* libRNSound.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -567,6 +567,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				489497102182ABCF003FC2D8 /* libRNViewShot.a in Frameworks */,
+				4894970F2182ABC6003FC2D8 /* libRCTVideo.a in Frameworks */,
+				4894970E2182ABBD003FC2D8 /* libRCTTorch.a in Frameworks */,
+				4894970D2182ABB4003FC2D8 /* libRNSVG.a in Frameworks */,
+				4894970C2182ABAC003FC2D8 /* libRNSound.a in Frameworks */,
+				4894970B2182ABA3003FC2D8 /* libRNSketch.a in Frameworks */,
+				4894970A2182AB9B003FC2D8 /* libRNShakeEvent.a in Frameworks */,
+				489497092182AB91003FC2D8 /* libRCTOrientation.a in Frameworks */,
+				489497082182AB85003FC2D8 /* libBVLinearGradient.a in Frameworks */,
+				489497072182AB7A003FC2D8 /* libimageCropPicker.a in Frameworks */,
+				489497062182AB6E003FC2D8 /* libRCTHttpCache.a in Frameworks */,
+				489497052182AB61003FC2D8 /* libRNFS.a in Frameworks */,
+				489497042182AB56003FC2D8 /* libRNFetchBlob.a in Frameworks */,
+				489497032182AB49003FC2D8 /* libRNDeviceInfo.a in Frameworks */,
+				489497022182AB3C003FC2D8 /* libRCTContacts.a in Frameworks */,
+				489497012182AB29003FC2D8 /* libRNCamera.a in Frameworks */,
+				489497002182AB0A003FC2D8 /* libRNAudio.a in Frameworks */,
 				ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */,
 				11D1A2F320CAFA9E000508D9 /* libRCTAnimation.a in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -579,23 +596,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				6B84793252DC4DA0A8307A29 /* libRNAudio.a in Frameworks */,
-				703E89DE4A684292A8CFB1EB /* libRNCamera.a in Frameworks */,
-				6569476371A84C539A759992 /* libRCTContacts.a in Frameworks */,
-				915D91B7BC0A4886AE2FE3B4 /* libRNDeviceInfo.a in Frameworks */,
-				85A1C69D0654440A803C7BCF /* libRNFetchBlob.a in Frameworks */,
-				2643524F0BC8433C8B5B21BC /* libRNFS.a in Frameworks */,
-				03A5E21EB7494107B1EF7D53 /* libRCTHttpCache.a in Frameworks */,
-				14062262058042B2B314D82C /* libimageCropPicker.a in Frameworks */,
-				DB6F7EF2AC5F40B99F04D05A /* libBVLinearGradient.a in Frameworks */,
-				4055C3F7E8E348959D971907 /* libRCTOrientation.a in Frameworks */,
-				E0E5D0CC8FCA4CDE9ACDF737 /* libRNShakeEvent.a in Frameworks */,
-				BD32CC43EB524B2780C223D0 /* libRNSketch.a in Frameworks */,
-				FB6D64D77BBC4F95A4F2DCEB /* libRNSound.a in Frameworks */,
-				3E6B49F072054DE6937E4A7E /* libRNSVG.a in Frameworks */,
-				CF4ED2BA4F6746EDBCAA180E /* libRCTTorch.a in Frameworks */,
-				F3273C72AE9E4588B8CB770B /* libRCTVideo.a in Frameworks */,
-				454CE2959B54438E8A0FAF81 /* libRNViewShot.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1103,6 +1103,9 @@
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 2ST75BX3RV;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -1927,6 +1930,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 2ST75BX3RV;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
@@ -1965,6 +1969,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2ST75BX3RV;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-audio/ios",
