@@ -23,10 +23,21 @@
             "outDir": "${workspaceRoot}/.vscode/.react"
         },
         {
-            "type": "node",
+            "name": "Attach to packager",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
+            "request": "attach",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/.vscode/.react"
+        },
+        {
+            "name": "Debug in Exponent",
+            "program": "${workspaceRoot}/.vscode/launchReactNative.js",
+            "type": "reactnative",
             "request": "launch",
-            "name": "启动程序",
-            "program": "${workspaceFolder}/start"
+            "platform": "exponent",
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/.vscode/.react"
         }
     ]
 }
