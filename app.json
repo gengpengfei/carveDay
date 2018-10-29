@@ -1,4 +1,10 @@
 {
   "name": "carveDay",
-  "displayName": "carveDay"
+  "displayName": "carveDay",
+  "expo": {
+    "slug": "carveDay",
+    "name": "carveDay",
+    "sdkVersion": "30.0.0",
+    "entryPoint": "/Users/jk/Desktop/obj/carveDay/.vscode/exponentIndex.js"
+  }
 }

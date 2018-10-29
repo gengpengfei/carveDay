@@ -37,6 +37,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* carveDayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* carveDayTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		44ECDEF7E9B14258AEF9A871 /* libRNSVG-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 561F51958FF44C79BE2BD70B /* libRNSVG-tvOS.a */; };
+		485C83462186A06A00235C3E /* libRNPDFView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4897AC67218301F8009F83DC /* libRNPDFView.a */; };
 		489497002182AB0A003FC2D8 /* libRNAudio.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3DB21785DBC00E0F7DA /* libRNAudio.a */; };
 		489497012182AB29003FC2D8 /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3DE21785DBC00E0F7DA /* libRNCamera.a */; };
 		489497022182AB3C003FC2D8 /* libRCTContacts.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3C921785DBC00E0F7DA /* libRCTContacts.a */; };
@@ -56,7 +57,6 @@
 		489497102182ABCF003FC2D8 /* libRNViewShot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BCA3FF21785DBC00E0F7DA /* libRNViewShot.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		8728DA7C7C844E618455A289 /* libRNDeviceInfo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9F1DB898D24747A8F59979 /* libRNDeviceInfo-tvOS.a */; };
-		A12F911F1F894DE7B5687B9A /* libRNPDFView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B771F93975414E8B74E008 /* libRNPDFView.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 /* End PBXBuildFile section */
 
@@ -577,6 +577,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				485C83462186A06A00235C3E /* libRNPDFView.a in Frameworks */,
 				489497102182ABCF003FC2D8 /* libRNViewShot.a in Frameworks */,
 				4894970F2182ABC6003FC2D8 /* libRCTVideo.a in Frameworks */,
 				4894970E2182ABBD003FC2D8 /* libRCTTorch.a in Frameworks */,
@@ -606,7 +607,6 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-				A12F911F1F894DE7B5687B9A /* libRNPDFView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
